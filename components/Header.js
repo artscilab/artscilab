@@ -6,21 +6,29 @@ import {
   Jumbotron
 } from 'reactstrap';
 import SiteNav from './SiteNav'
-
+import PropTypes from "prop-types";
 
 export default class Header extends Component {
   render() {
     return (
-      <Jumbotron className='page-header' style={divStyle} >
+      <>
         <SiteNav title={this.props.title}></SiteNav>
-        <Container>
-          <Row className='row-no-margin'>
-            <Col>
-              <h1 className='display-2'>{this.props.pageName}</h1>
-            </Col>
-          </Row>
-        </Container>
-      </Jumbotron>
+        <Jumbotron className='page-header' >
+          <Container>
+            <Row className='row-no-margin'>
+              <Col>
+                <h1 className='display-2'>{this.props.pageName}</h1>
+              </Col>
+            </Row>
+          </Container>
+        </Jumbotron>
+      </>
+      
     )
   }
+}
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+  pageName: PropTypes.string.isRequired
 }

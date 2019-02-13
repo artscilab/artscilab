@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from './Footer';
 import 'bootstrap/scss/bootstrap.scss';
 import '../scss/main.scss';
+import PropTypes from 'prop-types';
 
 export default class Layout extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Layout extends Component {
           <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png"></link>
         </Head>
         <div className='layout-header'>
-          <Header title={this.props.title} isHome={this.props.isHome} pageName={this.props.pageName} intro={this.props.intro} banner={this.props.banner}></Header>
+          <Header title={this.props.title} isHome={this.props.isHome} pageName={this.props.pageName} intro={this.props.intro}></Header>
         </div>
         <div className='layout-body'>
           {this.props.children}
@@ -29,4 +30,11 @@ export default class Layout extends Component {
       </div>
     )
   }
+}
+
+Layout.propTypes = {
+  title: PropTypes.string.isRequired,
+  isHome: PropTypes.bool,
+  pageName: PropTypes.string,
+  intro: PropTypes.string
 }
