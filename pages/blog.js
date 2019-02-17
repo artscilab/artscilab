@@ -4,12 +4,11 @@ import { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DynamicLink from "../components/DynamicLink";
 
-
-export default class People extends Component {
+export default class Blog extends Component {
   static async getInitialProps() {
-    const res2 = await fetch('https://dev.atec.io/wp-json/wp/v2/lab_member?per_page=99')
-    let members = await res2.json()
-    return { members }
+    const res2 = await fetch('https://dev.atec.io/wp-json/wp/v2/posts?per_page=99')
+    let posts = await res2.json()
+    return { posts }
   }
 
   render() {
@@ -17,10 +16,10 @@ export default class People extends Component {
       <Layout title="People" pageName="People">
         <Container>
           <Row>
-            {this.props.members.map((person) => (
+            {this.props.posts.map((post) => (
               <Col sm='3'>
-                <DynamicLink actualRoute='person' displayRoute='people' id={person.id}>
-                  <h2>{person.title.rendered}</h2>
+                <DynamicLink actualRoute='post' displayRoute='blog' id={post.id}>
+                  <h2>{post.title.rendered}</h2>
                 </DynamicLink>
               </Col>
             ))}

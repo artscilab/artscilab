@@ -38,12 +38,18 @@ export default class SiteNav extends React.Component {
       <div className='cmnav-container'>
         <Navbar light expand="md" className='cmnav'>
           <Container>
-            <NavbarBrand href="/index">Comet Marketing</NavbarBrand>
+            <NavbarBrand href="/index">ArtSciLab</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink href="/people">People</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/projects">Projects</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/blog">Blog</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/about">About</NavLink>

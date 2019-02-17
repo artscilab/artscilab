@@ -10,7 +10,10 @@ export default class Footer extends React.Component {
     return(
       <Container>
         <Row>
-          <Col><h1>This is some text</h1></Col>
+          <Col>
+            <hr></hr>
+            <p className='lead'>This is some text in the footer</p>
+          </Col>
         </Row>
       </Container>
     )

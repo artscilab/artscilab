@@ -4,23 +4,22 @@ import { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DynamicLink from "../components/DynamicLink";
 
-
-export default class People extends Component {
+export default class Projects extends Component {
   static async getInitialProps() {
-    const res2 = await fetch('https://dev.atec.io/wp-json/wp/v2/lab_member?per_page=99')
-    let members = await res2.json()
-    return { members }
+    const res2 = await fetch('https://dev.atec.io/wp-json/wp/v2/project?per_page=99')
+    let projects = await res2.json()
+    return { projects }
   }
 
   render() {
     return (
-      <Layout title="People" pageName="People">
+      <Layout title="Projects" pageName="Projects">
         <Container>
           <Row>
-            {this.props.members.map((person) => (
+            {this.props.projects.map((project) => (
               <Col sm='3'>
-                <DynamicLink actualRoute='person' displayRoute='people' id={person.id}>
-                  <h2>{person.title.rendered}</h2>
+                <DynamicLink actualRoute='project' displayRoute='projects' id={project.id}>
+                  <h2>{project.title.rendered}</h2>
                 </DynamicLink>
               </Col>
             ))}
