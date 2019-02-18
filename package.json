@@ -19,8 +19,8 @@
     "node-fetch": "^2.3.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.1",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "reactstrap": "^7.1.0"
   }
 }
