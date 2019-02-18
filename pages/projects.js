@@ -15,15 +15,15 @@ export default class Projects extends Component {
     return (
       <Layout title="Projects" pageName="Projects">
         <Container>
-          <Row>
-            {this.props.projects.map((project) => (
-              <Col sm='3'>
-                <DynamicLink actualRoute='project' displayRoute='projects' id={project.id}>
-                  <h2>{project.title.rendered}</h2>
-                </DynamicLink>
-              </Col>
-            ))}
-          </Row>
+          {this.props.projects.map((project) => (
+            <Row>
+                <Col>
+                  <DynamicLink actualRoute='project' displayRoute='projects' id={project.id}>
+                    <h2>{project.title.rendered}</h2>
+                  </DynamicLink>
+                </Col>
+            </Row>
+          ))}
         </Container>
       </Layout>
     )

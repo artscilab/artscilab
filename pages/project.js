@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Layout from "../components/Layout";
 import fetch from "node-fetch";
+import BreadcrumbRow from "../components/Breadcrumb";
 
 export default class Project extends React.Component {
   constructor(props) {
@@ -24,15 +25,7 @@ export default class Project extends React.Component {
     return (
       <Layout pageName={this.props.project.title.rendered} title={this.props.project.title.rendered}>
         <Container>
-          <Row>
-            <Col>
-              <Breadcrumb>
-                <BreadcrumbItem><a href="/index">Home</a></BreadcrumbItem>
-                <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
-                <BreadcrumbItem active>{this.props.project.title.rendered}</BreadcrumbItem>
-              </Breadcrumb>
-            </Col>
-          </Row>
+          <BreadcrumbRow parentHref='/projects' parentText="Projects" activeText={this.props.project.title.rendered}></BreadcrumbRow>
           <Row>
             <Col dangerouslySetInnerHTML={this.renderContent()}>
             </Col>
