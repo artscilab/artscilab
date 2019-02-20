@@ -16,10 +16,11 @@ export default class People extends Component {
     return (
       <Layout title="People" pageName="People">
         <Container>
-          <Row>
+          <Row className='justify-content-center'>
             {this.props.members.map((person) => (
-              <Col sm='3'>
+              <Col sm='3' className='mb-5'>
                 <DynamicLink actualRoute='person' displayRoute='people' id={person.id}>
+                  <img className='img-fluid' src={person.profile_image.guid}></img>
                   <h2>{person.title.rendered}</h2>
                 </DynamicLink>
               </Col>

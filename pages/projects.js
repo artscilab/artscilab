@@ -16,9 +16,10 @@ export default class Projects extends Component {
       <Layout title="Projects" pageName="Projects">
         <Container>
           {this.props.projects.map((project) => (
-            <Row>
-                <Col>
+            <Row className='justify-content-center mb-5'>
+                <Col sm='8'>
                   <DynamicLink actualRoute='project' displayRoute='projects' id={project.id}>
+                    <img className='img-fluid mb-2' src={project.research_image.guid}></img>
                     <h2>{project.title.rendered}</h2>
                   </DynamicLink>
                 </Col>
