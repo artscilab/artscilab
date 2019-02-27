@@ -10,3 +10,15 @@
 .layout-footer {
   height: 200px;
 }
+
+.blog-post-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+}

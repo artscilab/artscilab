@@ -38,7 +38,7 @@ export default class Post extends React.Component {
             </Col>
           </Row>
           <Row className='justify-content-center'>
-            <Col sm='8' dangerouslySetInnerHTML={this.renderContent()}>
+            <Col sm='8' className='blog-post-content' dangerouslySetInnerHTML={this.renderContent()}>
             </Col>
           </Row>
         </Container>
