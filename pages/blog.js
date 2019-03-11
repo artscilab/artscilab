@@ -21,7 +21,7 @@ export default class Blog extends Component {
                 <Col sm='8'>
                   <DynamicLink actualRoute='post' displayRoute='blog' id={post.id}>
                   {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
-                    <img className='img-fluid mb-2' src={post._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url}></img>
+                    <img className='img-fluid mb-2' src={post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}></img>
                     }
                     <h2>{post.title.rendered}</h2>
                   </DynamicLink>

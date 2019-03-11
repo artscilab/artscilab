@@ -1,0 +1,14 @@
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: $color-text
+}
+
+a {
+  color: $color-theme;
+  transition: all .2s ease;
+  &:hover {
+    text-decoration: none
+  }
+}
