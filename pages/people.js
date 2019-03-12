@@ -18,7 +18,7 @@ export default class People extends Component {
         <Container>
           <Row className='justify-content-center'>
             {this.props.members.map((person) => (
-              <Col sm='3' className='mb-5 listing' >
+              <Col md='3' className='mb-5 listing' >
                 <DynamicLink actualRoute='person' displayRoute='people' id={person.id}>
                   <div className='crop'>
                     <img className='img-fluid' src={person.profile_image.guid}></img>
