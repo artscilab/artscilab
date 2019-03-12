@@ -11,7 +11,7 @@ export default class People extends Component {
     let members = await res2.json()
     return { members }
   }
-
+ 
   render() {
     return (
       <Layout title="People" pageName="People">
