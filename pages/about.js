@@ -13,12 +13,12 @@ export default function Home(props) {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col md='6'>
             <h3>Art-science collaborations</h3>
             <p>Collaboration between the arts and sciences has the potential to create new knowledge, ideas and processes beneficial to both fields.</p>
             <p>We work on initiatives that could not be accomplished without collaboration between artists and scientists.</p>
           </Col>
-          <Col>
+          <Col md='6'>
             <h3>Experimental publishing</h3>
             <p>Digital culture is transforming how we document our work and show it to others. Curating and peer review processes are being re-invented.</p>
             <p>We conduct experiments in publishing to explore and identify new multi-modal and multimedia best practices.</p>

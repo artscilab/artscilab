@@ -7,6 +7,7 @@ import {
 } from 'reactstrap';
 import SiteNav from './SiteNav'
 import PropTypes from "prop-types";
+import ReactFittext from 'react-fittext';
 
 export default class Header extends Component {
   render() {
@@ -17,7 +18,9 @@ export default class Header extends Component {
           <Container>
             <Row className='row-no-margin'>
               <Col>
-                <h1 className='display-2'>{this.props.pageName}</h1>
+                <ReactFittext compressor={0.5} maxFontSize={90}>
+                  <h1 className='display-2'>{this.props.pageName}</h1>
+                </ReactFittext>
               </Col>
             </Row>
           </Container>
