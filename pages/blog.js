@@ -18,7 +18,7 @@ export default class Blog extends Component {
         <Container>
           {this.props.posts.map((post) => (
             <Row className='justify-content-center mt-5'>
-                <Col sm='8'>
+                <Col sm='8 text-center'>
                   <DynamicLink actualRoute='post' displayRoute='blog' id={post.id}>
                   {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
                     <img className='img-fluid mb-2' src={post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}></img>
