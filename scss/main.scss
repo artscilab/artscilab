@@ -1,18 +1,9 @@
 @import "vars";
 @import "typography";
+@import "components";
 
-.layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.layout-body {
-  flex: 1;
-  margin-bottom: 100px;
-}
-
-.person-listing {
+// person index page
+.listing {
   a {
     display: block;
     padding: 15px;
@@ -36,23 +27,17 @@
   }
 }
 
-.layout-footer {
-  text-align: center;
-
-  .footer-row {
-    padding: 50px 0;
-    border-top: 1px solid #eaeaea;
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.blog-post-content {
+// blog posts
+.post-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 
   p {
     margin-bottom: 15px;
@@ -83,24 +68,27 @@
     margin-bottom: 10px;
   }
 }
-img {
-  max-width: 100%;
-  height: auto; 
-}
 
-.crop {
-  overflow: hidden;
-  margin-bottom: 1px;
+.site-lead {
+  font-size: 45px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 100px 0;
 
-  img {
-    object-fit: cover;
-    width: 300px;
-    height: 250px;
-    margin: 0
+  span.data-vis {
+    color: rgb(235, 197, 88)
+  }
+
+  span.experimental-publishing {
+    color: rgb(82, 183, 196)
+  }
+
+  span.hybridization {
+    color: rgb(237, 70, 68)
   }
 }
 
-.lead {
-  font-weight: 300;
-  color: $color-theme
+.heading-line {
+  height: 3px;
+  background: $color-theme;
 }

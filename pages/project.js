@@ -26,21 +26,29 @@ export default class Project extends React.Component {
       <Layout pageName={this.props.project.title.rendered} title={this.props.project.title.rendered}>
         <Container>
           <BreadcrumbRow parentHref='/projects' parentText="Projects" activeText={this.props.project.title.rendered}></BreadcrumbRow>
-          <Row className='mb-5'>
-            <Col dangerouslySetInnerHTML={this.renderContent()}>
+          <Row className='mb-3 text-center align-items-center justify-content-center'>
+            <Col sm='8'>
+              <img className='img-fluid mb-2' src={this.props.project.research_image.guid}></img>
             </Col>
           </Row>
-          <Row className='mb-3'>
+          <Row className='mb-5 justify-content-center'>
+            <Col sm='8' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
+            </Col>
+          </Row>
+          <Row className='mb-3 text-center'>
             <Col>
               <h2>People involved</h2>
             </Col>
           </Row>
-          <Row>
+          <Row className='justify-content-center'>
             {this.props.project.lab_members.map((person) => (
-              <Col sm='3' className='mb-5'>
+              <Col sm='3' className='mb-5 listing' >
                 <DynamicLink actualRoute='person' displayRoute='people' id={person.id}>
-                  <img className='img-fluid' src={person.profile_image.guid}></img>
+                  <div className='crop'>
+                    <img className='img-fluid' src={person.profile_image.guid}></img>
+                  </div>
                   <h2>{person.post_title}</h2>
+                  {person.member_title && <p>{person.member_title}</p> }
                 </DynamicLink>
               </Col>
             ))}

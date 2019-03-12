@@ -20,31 +20,36 @@ export default class Index extends Component {
         <Container>
           <Row>
             <Col>
-              <p className='lead'>This is a blurb about ArtSciLab</p>
+              <p className='site-lead'>The ArtSciLab is a transdisciplinary research lab that carries out national and international investigations on <span className='data-vis'>data visualization,</span> <span className='experimental-publishing'>experimental publishing</span> and the <span className='hybridization'>hybridization of art and science</span></p>
             </Col>
           </Row>
-          <Row className='mt-5'>
+          <Row className='mt-5 mb-3'>
             <Col>
               <h2>Recent Projects</h2>
+              <hr></hr>
             </Col>
           </Row>
           <Row className='mb-3'>
             {this.props.projects.map((project) => (
-              <Col sm='3'>
-                <DynamicLink actualRoute='project' displayRoute='projects' id={project.id} >
-                    <h2>{project.title.rendered}</h2>
+              <Col sm='3' className='listing'>
+                <DynamicLink actualRoute='project' displayRoute='projects' id={project.id}>
+                  {project.research_image && <div className='crop'>
+                    <img src={project.research_image.guid}></img>
+                  </div>}
+                  <h2>{project.title.rendered}</h2>
                 </DynamicLink>
               </Col>
             ))}
           </Row>
-          <Row className='mt-5'>
+          <Row className='mt-5 mb-3'>
             <Col>
               <h2>Recent Posts</h2>
+              <hr></hr>
             </Col>
           </Row>
           <Row className='mb-3'>
             {this.props.posts.map((post) => (
-              <Col sm='3'>
+              <Col sm='3' className='listing'>
                 <DynamicLink actualRoute='post' displayRoute='posts' id={post.id} >
                   <h2>{post.title.rendered}</h2>
                 </DynamicLink>
