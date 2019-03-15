@@ -16,7 +16,7 @@ export default class Index extends Component {
 
   render() {
     return (
-      <Layout title="ArtSciLab" pageName="ArtSciLab" isHome={true}>
+      <Layout title="ArtSciLab" pageName="ArtSciLab" isHome>
         <Container>
           <Row>
             <Col>

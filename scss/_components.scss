@@ -14,7 +14,7 @@
 
   .footer-row {
     padding: 50px 0;
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid $theme-light-gray;
 
     p {
       margin-bottom: 0;
@@ -24,7 +24,7 @@
 
 hr {
   height: 3px;
-  background-color: #eaeaea;
+  background-color: $theme-light-gray;
   border: 0;
   outline: none;
 }
@@ -47,7 +47,7 @@ img {
 
 .lead {
   font-weight: 300;
-  color: $color-theme
+  color: $theme-primary
 }
 
 .breadcrumb-row {

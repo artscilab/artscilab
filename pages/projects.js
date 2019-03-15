@@ -15,16 +15,16 @@ export default class Projects extends Component {
     return (
       <Layout title="Projects" pageName="Projects">
         <Container>
-          {this.props.projects.map((project) => (
-            <Row className='justify-content-center mb-5'>
-                <Col sm='8 text-center'>
-                  <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
-                    <img className='img-fluid mb-2' src={project.research_image.guid}></img>
-                    <h2>{project.title.rendered}</h2>
-                  </DynamicLink>
-                </Col>
-            </Row>
+          <Row className='justify-content-center mb-5'>
+          {this.props.projects.map((project, i) => (
+            <Col sm='6 project-listing text-center'>
+              <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
+                <img className='img-fluid mb-2' src={project.research_image.guid}></img>
+                <h2>{project.title.rendered}</h2>
+              </DynamicLink>
+            </Col>
           ))}
+          </Row>
         </Container>
       </Layout>
     )

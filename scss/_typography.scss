@@ -6,9 +6,10 @@ p {
 }
 
 a {
-  color: $color-theme;
+  color: $theme-primary;
   transition: all .2s ease;
   &:hover {
-    text-decoration: none
+    text-decoration: none;
+    color: $theme-dark-gray
   }
 }
