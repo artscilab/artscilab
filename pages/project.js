@@ -12,9 +12,9 @@ export default class Project extends React.Component {
   }
   
   static async getInitialProps({ query }) {
-    const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/project/${query.id}`)
+    const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/project?slug=${query.slug}`)
     let data = await res.json()
-    return { project: data }
+    return { project: data[0] }
   }
 
   renderContent() {
@@ -43,7 +43,7 @@ export default class Project extends React.Component {
           <Row className='justify-content-center'>
             {this.props.project.lab_members.map((person) => (
               <Col sm='3' className='mb-5 listing' >
-                <DynamicLink actualRoute='person' displayRoute='people' id={person.id}>
+                <DynamicLink actualRoute='person' displayRoute='people' slug={person.slug}>
                   <div className='crop'>
                     <img className='img-fluid' src={person.profile_image.guid}></img>
                   </div>

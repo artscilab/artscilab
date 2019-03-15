@@ -10,9 +10,9 @@ app.prepare()
   .then(() => {
     const server = express()
 
-    server.get('/people/:id', (req, res) => {
+    server.get('/people/:slug', (req, res) => {
       const personPage = '/person'
-      const queryParams = { id: req.params.id }
+      const queryParams = { slug: req.params.slug }
       app.render(req, res, personPage, queryParams)
     })
 
@@ -22,15 +22,9 @@ app.prepare()
       app.render(req, res, postPage, queryParams)
     })
 
-    server.get('/projects/:id', (req, res) => {
+    server.get('/projects/:slug', (req, res) => {
       const actualPage = '/project'
-      const queryParams = { id: req.params.id }
-      app.render(req, res, actualPage, queryParams)
-    })
-
-    server.get('/blog/:id', (req, res) => {
-      const actualPage = '/post'
-      const queryParams = { id: req.params.id }
+      const queryParams = { slug: req.params.slug }
       app.render(req, res, actualPage, queryParams)
     })
 

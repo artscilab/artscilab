@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default class DynamicLink extends Component {
   render() {
     return (
-      <Link as={`/${this.props.displayRoute}/${this.props.id}`} href={`/${this.props.actualRoute}?id=${this.props.id}`}>
+      <Link as={`/${this.props.displayRoute}/${this.props.slug}`} href={`/${this.props.actualRoute}?slug=${this.props.slug}`}>
         <a>{this.props.children}</a>
       </Link>
     )
@@ -14,6 +14,6 @@ export default class DynamicLink extends Component {
 
 DynamicLink.propTypes = {
   displayRoute: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  slug: PropTypes.string.isRequired,
   actualRoute: PropTypes.string.isRequired
 }

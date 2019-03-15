@@ -11,15 +11,14 @@ export default class Person extends React.Component {
   }
 
   static async getInitialProps({ query }) {
-    const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/lab_member/${query.id}`)
+    const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/lab_member?slug=${query.slug}`)
     let data = await res.json()
-    return { person: data }
+    return { person: data[0] }
   }
 
   renderPost() {
     return { __html: this.props.person.content.rendered }
   }
-
 
   render() {
     return(
