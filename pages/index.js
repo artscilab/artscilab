@@ -32,7 +32,7 @@ export default class Index extends Component {
           <Row className='mb-3'>
             {this.props.projects.map((project) => (
               <Col sm='3' className='listing'>
-                <DynamicLink actualRoute='project' displayRoute='projects' id={project.id}>
+                <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
                   {project.research_image && <div className='crop'>
                     <img src={project.research_image.guid}></img>
                   </div>}
@@ -50,7 +50,7 @@ export default class Index extends Component {
           <Row className='mb-3'>
             {this.props.posts.map((post) => (
               <Col sm='3' className='listing'>
-                <DynamicLink actualRoute='post' displayRoute='posts' id={post.id} >
+                <DynamicLink actualRoute='post' displayRoute='posts' slug={post.slug} >
                   <h2>{post.title.rendered}</h2>
                 </DynamicLink>
               </Col>

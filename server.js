@@ -16,9 +16,9 @@ app.prepare()
       app.render(req, res, personPage, queryParams)
     })
 
-    server.get('/blog/:id', (req, res) => {
+    server.get('/blog/:slug', (req, res) => {
       const postPage = '/post'
-      const queryParams = { id: req.params.id }
+      const queryParams = { slug: req.params.slug }
       app.render(req, res, postPage, queryParams)
     })
 

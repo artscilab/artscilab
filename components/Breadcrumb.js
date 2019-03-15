@@ -8,7 +8,7 @@ export default class BreadcrumbRow extends Component {
       <Row className='breadcrumb-row'>
         <Col>
           <Breadcrumb>
-            <BreadcrumbItem><a href='/index'>Home</a></BreadcrumbItem>
+            <BreadcrumbItem><a href='/'>Home</a></BreadcrumbItem>
             <BreadcrumbItem><a href={this.props.parentHref}>{this.props.parentText}</a></BreadcrumbItem>
             <BreadcrumbItem active>{this.props.activeText}</BreadcrumbItem>
           </Breadcrumb>

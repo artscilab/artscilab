@@ -15,9 +15,9 @@ export default class Post extends React.Component {
 
   
   static async getInitialProps({query}) {
-    const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/posts/${query.id}`)
+    const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/posts?slug=${query.slug}`)
     let post = await res.json()
-    return { post }
+    return { post: post[0] }
   }
 
   renderContent() {
@@ -31,7 +31,7 @@ export default class Post extends React.Component {
           <Row className='justify-content-center'>
             <Col sm='8'>
               <Breadcrumb>
-                <BreadcrumbItem><a href="/index">Home</a></BreadcrumbItem>
+                <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
                 <BreadcrumbItem><a href="/blog">Blog</a></BreadcrumbItem>
                 <BreadcrumbItem active>{this.props.post.title.rendered}</BreadcrumbItem>
               </Breadcrumb>
