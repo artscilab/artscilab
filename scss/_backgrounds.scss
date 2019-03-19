@@ -1,4 +1,10 @@
-
+.page-header {
+  background: url("/static/art.jpg");
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  text-shadow: 0 0 15px rgba(20, 20, 20, 0.5)
+}
 // .home-right {
 //   -webkit-animation: homebg 15s ease infinite;
 //   -moz-animation: homebg 15s ease infinite;

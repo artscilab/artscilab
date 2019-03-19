@@ -4,9 +4,6 @@
 @import "blog";
 @import "backgrounds";
 
-$box-shadow: 0 3px 8px rgba($theme-gray, 0.8);
-$box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
-
 .listing {
   a {
     display: block;
@@ -57,7 +54,7 @@ $box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    padding: 50px 100px 50px 50px;
+    padding: 50px 50px 100px 50px;
   }
 
   .home-right {
@@ -71,7 +68,8 @@ $box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
     color: #f8f8f8;
     
     @media (min-width: 1000px) {
-      justify-content: center;
+      justify-content: flex-start;
+      padding-top: 150px;
     }
 
     .intro-bg {
@@ -81,21 +79,11 @@ $box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
           display: block;
           position: absolute;
           left: 50%;
-          transform: translate(-40%, -20%);
+          transform: translate(-40%, -50%);
           content: "";
           width: 400px;
-          height: 200px;
+          height: 300px;
           background: rgba($theme-primary, 0.3);
-        }
-        &::before {
-          display: block;
-          position: absolute;
-          left: 50%;
-          transform: translate(-80%, -300%);
-          content: "";
-          width: 400px;
-          height: 200px;
-          background: rgba(rgb(235, 197, 88), 0.3);
         }
       }
     }
@@ -104,8 +92,8 @@ $box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
       background: $theme-dark-gray;
       z-index: 1000;
       @media (min-width: 1000px) {
-        margin-left: -100px;
-        max-width: 80%;
+        margin-left: -200px; 
+        max-width: 90%;
         margin-bottom: 0;
         box-shadow: $box-shadow-dark;
       }
@@ -127,10 +115,14 @@ $box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
   .site-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 10rem;
     margin-bottom: 0;
     line-height: 0.9;
-    margin-bottom: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left
+    }
   }
 
   .site-lead {
@@ -139,15 +131,15 @@ $box-shadow-dark: 0 3px 35px rgba(40, 40, 40, 0.4);
     font-weight: 700;
 
     span.data-vis {
-      color: rgb(235, 197, 88)
+      color: $theme-yellow
     }
 
     span.experimental-publishing {
-      color: rgb(82, 183, 196)
+      color: $theme-teal
     }
 
     span.hybridization {
-      color: rgb(237, 70, 68)
+      color: $theme-red
     }
   }
 }
