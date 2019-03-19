@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 import { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DynamicLink from "../components/DynamicLink";
+import SiteNav from '../components/SiteNav';
 
 export default class Index extends Component {
   static async getInitialProps() {
@@ -17,12 +18,17 @@ export default class Index extends Component {
   render() {
     return (
       <Layout title="ArtSciLab" pageName="ArtSciLab" isHome>
-        <Container>
-          <Row>
-            <Col>
+        <Container fluid>
+          <Row className='home-header'>
+            <Col md='6' className='home-left'>
+              <h1 className='site-title'>ART<br></br>SCI<br></br>LAB</h1>
               <p className='site-lead'>The ArtSciLab is a transdisciplinary research lab that carries out national and international investigations on <span className='data-vis'>data visualization,</span> <span className='experimental-publishing'>experimental publishing</span> and the <span className='hybridization'>hybridization of art and science</span></p>
             </Col>
+            <Col md='6' className='home-right'></Col>
           </Row>
+        </Container>
+        <Container>
+          <SiteNav title={this.props.title}></SiteNav>
           <Row className='mt-5 mb-3'>
             <Col>
               <h2>Recent Projects</h2>

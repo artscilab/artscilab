@@ -1,0 +1,42 @@
+
+// blog posts
+.post-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  .wp-caption {
+    max-width: 100%;
+    margin: 30px auto 0 auto;
+    text-align: center;
+
+    p {
+      margin-top: 5px;
+      font-style: italic
+    }
+  }
+
+  iframe {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

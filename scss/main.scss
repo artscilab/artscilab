@@ -1,10 +1,11 @@
 @import "vars";
 @import "typography";
 @import "components";
+@import "blog";
+@import "backgrounds";
 
 $box-shadow: 0 3px 8px rgba($theme-gray, 0.8);
 
-// person index page
 .listing {
   a {
     display: block;
@@ -38,68 +39,55 @@ $box-shadow: 0 3px 8px rgba($theme-gray, 0.8);
   }
 }
 
-// blog posts
-.post-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-
-  p {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.8
-  }
-
-  img {
-    margin: 0 auto;
-    display: block;
-  }
-  .wp-caption {
-    max-width: 100%;
-    margin: 30px auto 0 auto;
-    text-align: center;
-
-    p {
-      margin-top: 5px;
-      font-style: italic
-    }
-  }
-
-  iframe {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-.site-lead {
-  font-size: 45px;
-  line-height: 1.3;
-  font-weight: 700;
-  margin: 100px 0;
-
-  span.data-vis {
-    color: rgb(235, 197, 88)
-  }
-
-  span.experimental-publishing {
-    color: rgb(82, 183, 196)
-  }
-
-  span.hybridization {
-    color: rgb(237, 70, 68)
-  }
-}
-
 .heading-line {
   height: 3px;
   background: $theme-primary;
+}
+
+.home-header {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 50px;;
+  }
+
+  .home-right {
+    height: 100%;
+    background: linear-gradient(45deg, $theme-primary, rgb(82, 183, 196));
+    background-size: 200%;
+    box-shadow: inset 0px 0 50px rgba(20, 20, 20, 0.25)
+  }
+
+  .site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 8rem;
+    margin-bottom: 0;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+
+  .site-lead {
+    font-size: 35px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    span.data-vis {
+      color: rgb(235, 197, 88)
+    }
+
+    span.experimental-publishing {
+      color: rgb(82, 183, 196)
+    }
+
+    span.hybridization {
+      color: rgb(237, 70, 68)
+    }
+  }
 }
