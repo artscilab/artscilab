@@ -24,7 +24,13 @@ export default class Index extends Component {
               <h1 className='site-title'>ART<br></br>SCI<br></br>LAB</h1>
               <p className='site-lead'>The ArtSciLab is a transdisciplinary research lab that carries out national and international investigations on <span className='data-vis'>data visualization,</span> <span className='experimental-publishing'>experimental publishing</span> and the <span className='hybridization'>hybridization of art and science</span></p>
             </Col>
-            <Col md='6' className='home-right'></Col>
+            <Col md='6' className='home-right'>
+              <div className='intro'>
+                <h2>ART and SCIENCE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur..</p>
+              </div>
+              <div className='intro-bg'></div>
+            </Col>
           </Row>
         </Container>
         <Container>
