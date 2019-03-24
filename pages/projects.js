@@ -17,7 +17,7 @@ export default class Projects extends Component {
         <Container>
           <Row className='justify-content-center mb-5'>
           {this.props.projects.map((project, i) => (
-            <Col sm='6 project-listing text-center'>
+            <Col sm='6' className='project-listing text-center'>
               <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
                 <img className='img-fluid mb-2' src={project.research_image.guid}></img>
                 <h2>{project.title.rendered}</h2>

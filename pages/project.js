@@ -43,7 +43,7 @@ export default class Project extends React.Component {
           <Row className='justify-content-center'>
             {this.props.project.lab_members.map((person) => (
               <Col sm='3' className='mb-5 listing' >
-                <DynamicLink actualRoute='person' displayRoute='people' slug={person.slug}>
+                <DynamicLink actualRoute='person' displayRoute='people' slug={person.post_name}>
                   <div className='crop'>
                     <img className='img-fluid' src={person.profile_image.guid}></img>
                   </div>

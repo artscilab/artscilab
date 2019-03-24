@@ -4,6 +4,12 @@
 @import "blog";
 @import "backgrounds";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .listing {
   a {
     display: block;
@@ -54,7 +60,7 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    padding: 50px 50px 100px 50px;
+    padding: 50px;
   }
 
   .home-right {
@@ -71,52 +77,13 @@
       justify-content: flex-start;
       padding-top: 150px;
     }
-
-    .intro-bg {
-      height: 0;
-      @media (min-width: 1000px) {
-        &::after {
-          display: block;
-          position: absolute;
-          left: 50%;
-          transform: translate(-40%, -50%);
-          content: "";
-          width: 400px;
-          height: 300px;
-          background: rgba($theme-primary, 0.3);
-        }
-      }
-    }
-
-    .intro {
-      background: $theme-dark-gray;
-      z-index: 1000;
-      @media (min-width: 1000px) {
-        margin-left: -200px; 
-        max-width: 90%;
-        margin-bottom: 0;
-        box-shadow: $box-shadow-dark;
-      }
-
-      margin: 50px;
-      padding: 50px;
-
-      h2 {
-        font-size: 3rem;
-        margin-bottom: 25px;
-      }
-      p {
-        color: #f8f8f8;
-        margin-bottom: 0;
-      }
-    }
   }
 
   .site-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 10rem;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     line-height: 0.9;
     text-align: center;
 

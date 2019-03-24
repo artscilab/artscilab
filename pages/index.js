@@ -25,13 +25,9 @@ export default class Index extends Component {
               <ReactFitText compressor={0.3} maxFontSize={150}>
                 <h1 className='site-title'>ART<br></br>SCI<br></br>LAB</h1>
               </ReactFitText>
+              <p className='site-lead'>The ArtSciLab is a transdisciplinary research lab that carries out national and international investigations on <span className='data-vis'>data visualization,</span> <span className='experimental-publishing'>experimental publishing</span> and the <span className='hybridization'>hybridization of art and science</span></p>
             </Col>
             <Col md='6' className='home-right'>
-              <div className='intro'>
-                <h2>ART/SCIENCE</h2>
-                <p className='site-lead'>The ArtSciLab is a transdisciplinary research lab that carries out national and international investigations on <span className='data-vis'>data visualization,</span> <span className='experimental-publishing'>experimental publishing</span> and the <span className='hybridization'>hybridization of art and science</span></p>
-              </div>
-              <div className='intro-bg'></div>
             </Col>
           </Row>
         </Container>
