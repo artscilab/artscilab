@@ -17,6 +17,10 @@
     transition: all .2s ease;
     &:hover {
       background: $theme-light-gray;
+
+      h2 {
+        color: $theme-primary
+      }
     }
   }
   .crop {
@@ -25,7 +29,8 @@
   }
   h2 {
     margin-bottom: 5px;
-    color: $theme-primary;
+    color: $theme-dark-gray;
+    transition: all .2s ease;
   }
   p {
     color: $color-text;
