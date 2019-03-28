@@ -24,8 +24,12 @@ export default class Project extends React.Component {
   render() {
     return (
       <Layout pageName={this.props.project.title.rendered} title={this.props.project.title.rendered}>
-        <Container>
-          <BreadcrumbRow parentHref='/projects' parentText="Projects" activeText={this.props.project.title.rendered}></BreadcrumbRow>
+        <Container className='project-container'>
+          <Row className='justify-content-center'>
+            <Col sm='8' className='mb-5 text-center'>
+              <h1>{this.props.project.title.rendered}</h1>
+            </Col>
+          </Row>
           <Row className='mb-3 text-center align-items-center justify-content-center'>
             <Col sm='8'>
               <img className='img-fluid mb-2' src={this.props.project.research_image.guid}></img>

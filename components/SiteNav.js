@@ -35,7 +35,6 @@ export default class SiteNav extends React.Component {
 
   render() {
     return (
-      <div className='cmnav-container'>
         <Navbar light expand="md" className='cmnav'>
           <Container>
             <NavbarBrand href="/">ArtSciLab</NavbarBrand>
@@ -61,7 +60,6 @@ export default class SiteNav extends React.Component {
             </Collapse>
           </Container>
         </Navbar>
-      </div>
     );
   }
 }

@@ -19,6 +19,7 @@ export default class Index extends Component {
   render() {
     return (
       <Layout title="ArtSciLab" pageName="ArtSciLab" isHome>
+        <SiteNav title={this.props.title}></SiteNav>
         <Container fluid>
           <Row className='home-header'>
             <Col md='8' className='home-left'>
@@ -32,7 +33,6 @@ export default class Index extends Component {
           </Row>
         </Container>
         <Container>
-          <SiteNav title={this.props.title}></SiteNav>
           <Row className='mt-5 mb-5'>
             <Col className='text-center'>
               <h2>Recent Projects</h2>

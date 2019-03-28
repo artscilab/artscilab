@@ -55,11 +55,31 @@ img {
 }
 
 .cmnav {
+  width: 100%;
   .nav-link {
-    line-height: 50px;;
+    line-height: 25px;
+    margin: 25px 0;
   }
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: $theme-primary;
+.navbar .navbar-brand, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link {
+  color: #eaeaea;
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-bottom: 3px solid $theme-primary;
+    color: #fff;
+  }
+  &:focus {
+    color: $theme-primary;
+  }
+}
+
+.jumbotron {
+  border-radius: 0;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 0; 
 }

@@ -7,7 +7,7 @@ import DynamicLink from "../components/DynamicLink";
 
 export default class People extends Component {
   static async getInitialProps() {
-    const res2 = await fetch('https://dev.atec.io/wp-json/wp/v2/lab_member?per_page=99')
+    const res2 = await fetch('https://dev.atec.io/wp-json/wp/v2/lab_member?per_page=99&orderby=title&order=asc')
     let members = await res2.json()
     return { members }
   }

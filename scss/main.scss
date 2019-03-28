@@ -16,8 +16,6 @@
     padding: 15px;
     transition: all .2s ease;
     &:hover {
-      background: $theme-light-gray;
-
       h2 {
         color: $theme-primary
       }
@@ -55,7 +53,7 @@
 
 .home-header {
   @media (min-width: 768px) {
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
   }
@@ -114,4 +112,10 @@
       color: $theme-red
     }
   }
+}
+
+.project-container {
+  background: #fff;
+  margin-top: -100px;
+  padding-top: 100px;
 }
