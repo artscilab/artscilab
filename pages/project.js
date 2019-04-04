@@ -26,15 +26,19 @@ export default class Project extends React.Component {
       <Layout pageName={this.props.project.title.rendered} title={this.props.project.title.rendered}>
         <Container className='project-container'>
           <Row className='justify-content-center'>
-            <Col sm='8' className='mb-5 text-center'>
-              <h1>{this.props.project.title.rendered}</h1>
+            <Col sm='8' className='project-title text-center'>
+              <h1 className='display-2'>{this.props.project.title.rendered}</h1>
             </Col>
           </Row>
-          <Row className='mb-3 text-center align-items-center justify-content-center'>
-            <Col sm='8'>
-              <img className='img-fluid mb-2' src={this.props.project.research_image.guid}></img>
+        </Container>
+        <Container fluid>
+          <Row className='justify-content-center'>
+            <Col sm='10' className='project-feature-image-container'>
+              <img className='project-feature-image img-fluid mb-2' src={this.props.project.research_image.guid}></img>
             </Col>
           </Row>
+        </Container>
+        <Container className='project-content'>
           <Row className='mb-5 justify-content-center'>
             <Col sm='8' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
             </Col>

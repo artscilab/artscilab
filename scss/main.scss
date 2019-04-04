@@ -115,7 +115,25 @@
 }
 
 .project-container {
+  margin-top: -150px;
+}
+
+.project-title {
   background: #fff;
-  margin-top: -100px;
-  padding-top: 100px;
+  padding: 50px 0;
+}
+
+.project-feature-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-feature-image {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-content {
+  margin-top: 50px;
 }
