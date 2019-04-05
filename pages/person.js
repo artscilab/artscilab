@@ -38,9 +38,13 @@ export default class Person extends Component {
           </Row> 
           <Row className='person-info align-items-baseline justify-content-center'>
             <Col md='4'>
-              <ReactFitText compressor={0.6} maxFontSize={55}>
-                <h2 className='person-job-title'>{this.props.person.member_title}</h2>
-              </ReactFitText>
+              <div className='person-job-title'>
+                <ReactFitText compressor={0.6} maxFontSize={55}>
+                  <h2>{this.props.person.member_title}</h2>
+                </ReactFitText>
+                {this.props.person.website && 
+                <a href={this.props.person.website}>{this.props.person.website}</a>}
+              </div>
             </Col>
             <Col className='person-bio-container' md='7' dangerouslySetInnerHTML={this.renderPost()}>
             </Col>

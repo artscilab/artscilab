@@ -192,6 +192,7 @@
 .person-job-title {
   @media (min-width: 768px) {
     text-align: right;
+    background: #fff;
 
     &::before {
       content: "";
@@ -206,9 +207,15 @@
     }
   }
   color: $theme-gray;
-  font-size: 55px;
+  h2 {
+    font-size: 55px;
+  }
+  a {
+    font-size: 20px;
+    margin-top: 15px;
+    display: block;
+  }
   line-height: 1.2;
-  background: #fff;
   padding: 10px;
 }
 
@@ -217,7 +224,8 @@
 
   > p {
     font-size: 20px;
-    line-height: 1.6
+    line-height: 1.6;
+    margin-bottom: 15px;
   }
 }
 
