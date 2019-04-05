@@ -91,7 +91,6 @@ img {
   @media (min-width: 768px) {
     display: flex;
     min-height: 300px;
-    margin-bottom: 100px;
   }
   padding: 25px 0;
   display: flex;
@@ -99,4 +98,19 @@ img {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 0;
+}
+
+.jumbotron-margin {
+  margin-bottom: 100px;
+}
+
+.page-title {
+  color: $theme-dark-gray;
+  background: #fff;
+  padding: 50px 50px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    margin: -100px -50px 0px -50px;
+  }
 }

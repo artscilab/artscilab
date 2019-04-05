@@ -23,7 +23,7 @@ export default class Project extends React.Component {
   
   render() {
     return (
-      <Layout pageName={this.props.project.title.rendered} title={this.props.project.title.rendered}>
+      <Layout title={this.props.project.title.rendered}>
         <Container className='project-container'>
           <Row className='justify-content-center'>
             <Col sm='8' className='project-title text-center'>

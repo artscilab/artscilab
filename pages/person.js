@@ -22,10 +22,10 @@ export default class Person extends Component {
 
   render() {
     return(
-      <Layout pageName={this.props.person.title.rendered} title={this.props.person.title.rendered}>
+      <Layout title={this.props.person.title.rendered}>
         <Container className='person-single'>
           <Row className='person-header align-items-end justify-content-center'>
-            <Col md='5'>
+            <Col md='5' className='person-img'>
               <img className='img-fluid' src={this.props.person.profile_image.guid}></img>
             </Col>
             <Col md='7'>

@@ -11,10 +11,29 @@ import ReactFittext from 'react-fittext';
 
 export default class Header extends Component {
   render() {
+    let styles = '';
+    if (this.props.pageName) {
+      styles = ''
+    } else {
+      styles = 'jumbotron-margin'
+    }
     return (
-      <Jumbotron className='page-header' >
-        <SiteNav title={this.props.title}></SiteNav>
-      </Jumbotron>
+      <>
+        <Jumbotron className={styles + ' page-header'} >
+          <SiteNav title={this.props.title}></SiteNav>
+        </Jumbotron>
+        {this.props.pageName &&
+          <Container>
+            <Row className='row-no-margin'>
+              <Col>
+                <ReactFittext compressor={0.5} maxFontSize={90}>
+                  <h1 className='page-title display-2'>{this.props.pageName}</h1>
+                </ReactFittext>
+              </Col>
+            </Row>
+          </Container>
+        }
+      </>
     )
   }
 }
