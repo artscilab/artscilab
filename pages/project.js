@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Layout from "../components/Layout";
 import fetch from "node-fetch";
-import BreadcrumbRow from "../components/Breadcrumb";
+import ReactFitText from "react-fittext";
 import DynamicLink from "../components/DynamicLink";
 
 export default class Project extends React.Component {
@@ -27,7 +27,9 @@ export default class Project extends React.Component {
         <Container className='project-container'>
           <Row className='justify-content-center'>
             <Col sm='8' className='project-title text-center'>
-              <h1 className='display-2'>{this.props.project.title.rendered}</h1>
+              <ReactFitText compressor={0.6} maxFontSize={85}>
+                <h1 className='display-2'>{this.props.project.title.rendered}</h1>
+              </ReactFitText>
             </Col>
           </Row>
         </Container>

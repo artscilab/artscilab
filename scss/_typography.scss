@@ -8,6 +8,7 @@ p {
 a {
   color: $theme-primary;
   transition: all .2s ease;
+  
   &:hover {
     text-decoration: none;
     color: $theme-dark-gray

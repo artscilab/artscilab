@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import Layout from "../components/Layout";
 import { Container, Col, Row, Breadcrumb, BreadcrumbItem } from "reactstrap";
 import DynamicLink from "../components/DynamicLink";
-
+import ReactFitText from "react-fittext";
 export default class Person extends Component {
   constructor(props) {
     super(props)
@@ -28,15 +28,19 @@ export default class Person extends Component {
             <Col md='5'>
               <img className='img-fluid' src={this.props.person.profile_image.guid}></img>
             </Col>
-            <Col md='6'>
+            <Col md='7'>
               <div className='person-name'>
-                <h1 className='display-3'>{this.props.person.title.rendered}</h1>
+                <ReactFitText compressor={0.6} maxFontSize={75}>
+                  <h1 className='display-3'>{this.props.person.title.rendered}</h1>
+                </ReactFitText>
               </div>
             </Col>
           </Row> 
           <Row className='person-info align-items-baseline justify-content-center'>
             <Col md='4'>
-              <h2 className='person-job-title'>{this.props.person.member_title}</h2>
+              <ReactFitText compressor={0.6} maxFontSize={55}>
+                <h2 className='person-job-title'>{this.props.person.member_title}</h2>
+              </ReactFitText>
             </Col>
             <Col className='person-bio-container' md='7' dangerouslySetInnerHTML={this.renderPost()}>
             </Col>
@@ -46,7 +50,7 @@ export default class Person extends Component {
             {this.props.person.project_involved.map((project, i) => (
               <Col sm='3' className='project-listing text-center'>
                 <DynamicLink actualRoute='project' displayRoute='projects' slug={project.post_name}>
-                  <img className='img-fluid mb-2' src={project.research_image.guid}></img>
+                  <img className='img-fluid' src={project.research_image.guid}></img>
                   <h2>{project.post_title}</h2>
                 </DynamicLink>
               </Col>
