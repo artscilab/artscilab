@@ -132,8 +132,65 @@
 .project-feature-image {
   text-align: center;
   margin: 0 auto;
+  box-shadow: $box-shadow-large
 }
 
 .project-content {
   margin-top: 50px;
+}
+
+.person-single {
+  @media (min-width: 768px) {
+    margin-top: -200px;
+  }
+}
+
+.person-header {
+  img {
+    @media (min-width: 768px) {
+      box-shadow: -20px 20px 50px rgba($theme-gray, 0.25);;
+    }
+    box-shadow: 0 20px 50px rgba($theme-red, 0.25);
+  }
+}
+
+.person-name {
+  padding: 25px;
+  background: #fff;
+  @media (min-width: 768px) {
+    margin-left: -100px;
+  }
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    box-shadow: 20px 20px 50px rgba($theme-red, 0.25);
+  }
+  box-shadow: 0px 20px 50px rgba($theme-red, 0.25);
+
+
+  h1 {
+    margin: 0;
+    font-weight: 700;
+  }
+}
+
+.person-info {
+  margin-top: 50px;
+}
+
+.person-job-title {
+  text-align: right;
+  color: $theme-gray;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.person-bio-container {
+  > p {
+    font-size: 20px;
+    line-height: 1.6
+  }
+}
+
+.person-projects {
+  margin-top: 100px;
 }
