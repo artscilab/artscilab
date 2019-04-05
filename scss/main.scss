@@ -44,6 +44,7 @@
   img {
     box-shadow: $box-shadow;
     margin-bottom: 20px;
+    border-radius: $border-radius;
   }
 }
 
@@ -140,6 +141,13 @@
 .project-content {
   margin-top: 50px;
   padding: 25px;
+  
+  .post-content {
+    font-size: 22px;
+    @media (min-width: 768px) {
+      padding: 0 50px;
+    }
+  }
 }
 
 .person-single {
@@ -161,6 +169,7 @@
 .person-name {
   padding: 25px 35px;
   background: #fff;
+  color: $theme-dark-gray;
   margin-bottom: 20px;
   @media (min-width: 768px) {
     margin-left: -100px;
