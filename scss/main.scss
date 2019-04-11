@@ -23,7 +23,8 @@
   }
   .crop {
     margin-bottom: 10px;
-    box-shadow: $box-shadow
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
   }
   h2 {
     margin-bottom: 5px;
@@ -152,13 +153,13 @@
   }
 }
 
-.person-single {
+.single-item {
   @media (min-width: 768px) {
     margin-top: -200px;
   }
 }
 
-.person-header {
+.single-header {
   img {
     @media (min-width: 768px) {
       border-radius: $border-radius;
@@ -169,7 +170,7 @@
   }
 }
 
-.person-name {
+.single-title {
   padding: 25px 35px;
   background: #fff;
   color: $theme-dark-gray;
@@ -188,11 +189,15 @@
   }
 }
 
-.person-info {
-  margin-top: 100px;
+.single-information {
+  margin-top: 150px;
 }
 
-.person-job-title {
+.post-content {
+  margin-top: 50px;
+}
+
+.project-types, .person-job-title {
   @media (min-width: 768px) {
     text-align: right;
     background: #fff;
@@ -209,17 +214,20 @@
       z-index: -100;
     }
   }
+
   color: $theme-gray;
+  line-height: 1.2;
+  padding: 10px;
+  
   h2 {
     font-size: 55px;
   }
+  
   a {
     font-size: 20px;
     margin-top: 15px;
     display: block;
   }
-  line-height: 1.2;
-  padding: 10px;
 }
 
 .person-bio-container {
@@ -236,7 +244,7 @@
   margin-top: 100px;
 }
 
-.person-img {
+.single-feature-img {
   @media (min-width: 768px) {
     &::before {
       content: "";
@@ -246,8 +254,23 @@
       width: 75px;
       right: -35px;
       top: 0;
+      border-radius: $border-radius;
       background: $theme-red;
       box-shadow: $box-shadow-red;
     }
   }
+}
+
+.project-short-description {
+  background: $theme-red;
+  padding: 25px;
+  margin-top: 50px;
+  color: #fff;
+  box-shadow: $box-shadow-red;
+  border-radius: $border-radius;
+  font-size: 20px;
+}
+
+.project-type-list {
+  list-style-type: none;
 }

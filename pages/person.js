@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import { Container, Col, Row, Breadcrumb, BreadcrumbItem } from "reactstrap";
 import DynamicLink from "../components/DynamicLink";
 import ReactFitText from "react-fittext";
+
 export default class Person extends Component {
   constructor(props) {
     super(props)
@@ -23,20 +24,20 @@ export default class Person extends Component {
   render() {
     return(
       <Layout title={this.props.person.title.rendered}>
-        <Container className='person-single'>
-          <Row className='person-header align-items-end justify-content-center'>
-            <Col md='5' className='person-img'>
+        <Container className='single-item'>
+          <Row className='single-header align-items-end justify-content-center'>
+            <Col md='5' className='single-feature-img'>
               <img className='img-fluid' src={this.props.person.profile_image.guid}></img>
             </Col>
             <Col md='7'>
-              <div className='person-name'>
+              <div className='single-title'>
                 <ReactFitText compressor={0.6} maxFontSize={75}>
                   <h1 className='display-3'>{this.props.person.title.rendered}</h1>
                 </ReactFitText>
               </div>
             </Col>
           </Row> 
-          <Row className='person-info align-items-baseline justify-content-center'>
+          <Row className='single-information align-items-baseline justify-content-center'>
             <Col md='4'>
               <div className='person-job-title'>
                 <ReactFitText compressor={0.9} maxFontSize={55}>

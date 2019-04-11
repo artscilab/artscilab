@@ -24,27 +24,48 @@ export default class Project extends React.Component {
   render() {
     return (
       <Layout title={this.props.project.title.rendered}>
-        <Container className='project-container'>
-          <Row className='justify-content-center'>
-            <Col sm='8' className='project-title text-center'>
-              <ReactFitText compressor={0.6} maxFontSize={85}>
-                <h1 className='display-2'>{this.props.project.title.rendered}</h1>
-              </ReactFitText>
+        <Container className='single-item'>
+          <Row className='single-header align-items-end justify-content-center'>
+            <Col md='5' className='single-feature-img'>
+              <img className='img-fluid' src={this.props.project.research_image.guid}></img>
+            </Col>
+            <Col md='7'>
+              <div className='single-title'>
+                <ReactFitText compressor={0.6} maxFontSize={75}>
+                  <h1 className='display-3'>{this.props.project.title.rendered}</h1>
+                </ReactFitText>
+              </div>
+            </Col>
+          </Row> 
+
+          <Row className='mb-5 single-information justify-content-center'>
+            <Col md='4'>
+              <div className='project-types'>
+                {!!this.props.project.research_type && 
+                  <ul className='project-type-list'>
+                    {this.props.project.research_type.map((type) => (
+                      <li>
+                        <ReactFitText compressor={0.9} maxFontSize={55}>
+                          <h2>{type}</h2>
+                        </ReactFitText>
+                      </li>
+                    ))}
+                  </ul>
+                }
+                {this.props.project.access_link && 
+                <a href={this.props.project.access_link}>{this.props.project.access_link}</a>}
+              </div>
+            </Col>
+            <Col md='7'>
+              <p className='project-short-description'>{this.props.project.short_description}</p>
             </Col>
           </Row>
-        </Container>
-        <Container fluid>
-          <Row className='justify-content-center'>
-            <Col sm='10' className='project-feature-image-container'>
-              <img className='project-feature-image img-fluid mb-2' src={this.props.project.research_image.guid}></img>
-            </Col>
-          </Row>
-        </Container>
-        <Container className='project-content'>
+          
           <Row className='mb-5 justify-content-center'>
-            <Col sm='8' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
+            <Col sm='7' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
             </Col>
           </Row>
+
           <Row className='mb-3 text-center'>
             <Col>
               <h2>People involved</h2>
