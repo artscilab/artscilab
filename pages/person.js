@@ -53,7 +53,7 @@ export default class Person extends Component {
           {this.props.person.project_involved.length > 0 &&
             <Row className='person-projects justify-content-center'>
             {this.props.person.project_involved.map((project, i) => (
-              <Col sm='3' className='project-listing text-center'>
+              <Col sm='3' className='listing project-listing text-center'>
                 <DynamicLink actualRoute='project' displayRoute='projects' slug={project.post_name}>
                   <img className='img-fluid' src={project.research_image.guid}></img>
                   <h2>{project.post_title}</h2>
