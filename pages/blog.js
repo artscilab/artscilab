@@ -6,8 +6,16 @@ import DynamicLink from "../components/DynamicLink";
 
 export default class Blog extends Component {
   static async getInitialProps() {
-    const res = await fetch('https://dev.atec.io/wp-json/wp/v2/posts?per_page=99&_embed')
-    let posts = await res.json()
+    let numInResponse = 99;
+    let posts = [];
+    let offset = 0;
+    while (!(numInResponse < 99)) {
+      const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/posts?per_page=99&_embed&offset=${offset}`)
+      let currentPosts = await res.json();
+      posts = posts.concat(currentPosts);
+      numInResponse = currentPosts.length;
+      offset += currentPosts.length;
+    }
     
     return { posts }
   }
