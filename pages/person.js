@@ -44,7 +44,7 @@ export default class Person extends Component {
                   <h2>{this.props.person.member_title}</h2>
                 </ReactFitText>
                 {this.props.person.website && 
-                <a href={this.props.person.website}>{this.props.person.website}</a>}
+                <a target='blank' href={this.props.person.website}>{this.props.person.website}</a>}
               </div>
             </Col>
             <Col className='person-bio-container' md='7' dangerouslySetInnerHTML={this.renderPost()}>
