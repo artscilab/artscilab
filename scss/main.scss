@@ -49,6 +49,29 @@
   }
 }
 
+.blog-post {
+  .listing {
+    margin-bottom: 50px;
+
+    p {
+      margin-top: 10px;
+    }
+    img {
+      margin-bottom: 20px;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+  } 
+}
+
+.blog-single {
+  .featured-image {
+    margin-top: 50px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  }
+}
+
 .heading-line {
   height: 3px;
   background: $theme-primary;

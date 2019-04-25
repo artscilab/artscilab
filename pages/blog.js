@@ -16,7 +16,14 @@ export default class Blog extends Component {
       numInResponse = currentPosts.length;
       offset += currentPosts.length;
     }
-    
+    posts.map((post) => {
+      let date = new Date(Date.parse(post.date));
+      let date_display_str = 
+        date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear();
+      post.date = date_display_str;
+
+      return post;
+    })
     return { posts }
   }
 
@@ -24,16 +31,17 @@ export default class Blog extends Component {
     return (
       <Layout title="Blog" pageName="Blog">
         <Container>
-          {this.props.posts.map((post) => (
+          {this.props.posts.map((post, i) => (
             <Row className='blog-post justify-content-center mt-5'>
-                <Col sm='8 text-center'>
-                  <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug}>
-                  {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
-                    <img className='img-fluid mb-2' src={post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}></img>
-                    }
-                    <h2>{post.title.rendered}</h2>
-                  </DynamicLink>
-                </Col>
+              <Col sm='8 listing text-center'>
+                <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug}>
+                {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
+                  <img className='img-fluid' src={post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}></img>
+                  }
+                  <h2>{post.title.rendered}</h2>
+                  <p>{post.date}</p>
+                </DynamicLink>
+              </Col>
             </Row>
           ))}
         </Container>
