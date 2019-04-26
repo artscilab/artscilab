@@ -78,7 +78,7 @@ export default class Project extends React.Component {
               <Col sm='3' className='mb-5 listing' >
                 <DynamicLink actualRoute='person' displayRoute='people' slug={person.post_name}>
                   <div className='crop'>
-                    <img className='img-fluid' src={person.profile_image.guid}></img>
+                    <img className='img-fluid' src={convertUrlToHttps(person.profile_image.guid)}></img>
                   </div>
                   <h2>{person.post_title}</h2>
                   {person.member_title && <p>{person.member_title}</p> }
