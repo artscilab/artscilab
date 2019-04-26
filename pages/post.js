@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from "reactstrap";
 import Layout from "../components/Layout";
 import fetch from "node-fetch";
+import { convertUrlToHttps } from "../functions/functions";
 
 export default class Post extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class Post extends React.Component {
             <Row>
               <Col sm='8'>
                 <div>
-                  <img className='img-fluid featured-image' src={this.props.post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}></img>
+                  <img className='img-fluid featured-image' src={convertUrlToHttps(this.props.post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)}></img>
                 </div>
               </Col>
             </Row>

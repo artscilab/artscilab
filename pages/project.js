@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import fetch from "node-fetch";
 import ReactFitText from "react-fittext";
 import DynamicLink from "../components/DynamicLink";
+import { convertUrlToHttps } from "../functions/functions";
 
 export default class Project extends React.Component {
   constructor(props) {
@@ -22,12 +23,13 @@ export default class Project extends React.Component {
   }
   
   render() {
+    console.log(convertUrlToHttps)
     return (
       <Layout title={this.props.project.title.rendered}>
         <Container className='single-item'>
           <Row className='single-header align-items-end justify-content-center'>
             <Col md='5' className='single-feature-img'>
-              <img className='img-fluid' src={this.props.project.research_image.guid}></img>
+              <img className='img-fluid' src={convertUrlToHttps( this.props.project.research_image.guid)}></img>
             </Col>
             <Col md='7'>
               <div className='single-title'>

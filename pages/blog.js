@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 import { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DynamicLink from "../components/DynamicLink";
+import { convertUrlToHttps } from "../functions/functions";
 
 export default class Blog extends Component {
   static async getInitialProps() {
@@ -36,7 +37,7 @@ export default class Blog extends Component {
               <Col sm='8 listing text-center'>
                 <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug}>
                 {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
-                  <img className='img-fluid' src={post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}></img>
+                  <img className='img-fluid' src={convertUrlToHttps(post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)}></img>
                   }
                   <h2>{post.title.rendered}</h2>
                   <p>{post.date}</p>

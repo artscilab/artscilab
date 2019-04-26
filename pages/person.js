@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import fetch from "node-fetch";
 import Layout from "../components/Layout";
-import { Container, Col, Row, Breadcrumb, BreadcrumbItem } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import DynamicLink from "../components/DynamicLink";
 import ReactFitText from "react-fittext";
+import { convertUrlToHttps } from '../functions/functions';
 
 export default class Person extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export default class Person extends Component {
         <Container className='single-item'>
           <Row className='single-header align-items-end justify-content-center'>
             <Col md='5' className='single-feature-img'>
-              <img className='img-fluid' src={this.props.person.profile_image.guid}></img>
+              <img className='img-fluid' src={convertUrlToHttps(this.props.person.profile_image.guid)}></img>
             </Col>
             <Col md='7'>
               <div className='single-title'>
