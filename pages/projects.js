@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 import { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DynamicLink from "../components/DynamicLink";
+import { convertUrlToHttps } from "../functions/functions";
 
 export default class Projects extends Component {
   static async getInitialProps() {
@@ -19,7 +20,7 @@ export default class Projects extends Component {
           {this.props.projects.map((project, i) => (
             <Col sm='6' className='listing project-listing text-center'>
               <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
-                <img className='img-fluid mb-2' src={project.research_image.guid}></img>
+                <img className='img-fluid mb-2' src={convertUrlToHttps(project.research_image.guid)}></img>
                 <h2>{project.title.rendered}</h2>
               </DynamicLink>
             </Col>
