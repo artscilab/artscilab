@@ -1,5 +1,6 @@
 const express = require('express')
 const next = require('next')
+const fetch = require("node-fetch")
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -14,6 +15,13 @@ app.prepare()
       const personPage = '/person'
       const queryParams = { slug: req.params.slug }
       app.render(req, res, personPage, queryParams)
+    })
+
+    server.get("/feed", async (req, res) => {
+      const r = await fetch("https://dev.atec.io/feed")
+      const x = Buffer.from(await r.text());
+      res.set("content-type", "application/rss+xml")
+          .status(200).send(x)
     })
 
     server.get('/blog/:slug', (req, res) => {
