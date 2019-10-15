@@ -41,7 +41,7 @@ export default class Index extends Component {
               }
               
               return (
-                <Col sm='4' className='listing home-listing'>
+                <Col key={post.id} sm='4' className='listing home-listing'>
                   <div>
                     {post._embedded &&
                       post._embedded['wp:featuredmedia'] && 

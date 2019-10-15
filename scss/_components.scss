@@ -148,3 +148,11 @@ button {
     background: $theme-red;
   }
 }
+
+.wp-block-file__button {
+  @extend button;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
