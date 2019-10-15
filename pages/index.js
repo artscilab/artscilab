@@ -23,7 +23,7 @@ export default class Index extends Component {
         <Container fluid>
           <Row className='home-header'>
             <Col md='8' className='home-left'>
-              <ReactFitText compressor={0.6} maxFontSize={150}>
+              <ReactFitText compressor={0.6} maxFontSize={100}>
                 <h1 className='site-title'>ARTSCILAB</h1>
               </ReactFitText>
               <p className='site-lead'>The ArtSciLab is a transdisciplinary research lab that carries out national and international investigations on <span className='data-vis'>data visualization,</span> <span className='experimental-publishing'>experimental publishing</span> and the <span className='hybridization'>hybridization of art and science</span></p>
