@@ -5,14 +5,14 @@ export default function Home(props) {
   return(
     <Layout pageName="About" title="About">
       <Container>
-      <Row className='my-4 justify-content-center'>
+        <Row className='mt-4 mb-5 justify-content-center'>
           <Col sm='8'>
             <p className="lead">We are a transdisciplinary research lab—helping the arts, science, and technology communities by pursuing initiatives of societal urgency and cultural timeliness.</p>
             <p>We develop multiple applications in a studio-lab approach through our projects, which include the creation of artworks, scientific research, technology development, and educational innovation.</p>
             <p>We carry out our work through trans-disciplinary, national and international partnerships and collaborations.</p>
           </Col>
         </Row>
-        <Row>
+        <Row className="my-5">
           <Col md='6'>
             <h3>Art-science collaborations</h3>
             <p>Collaboration between the arts and sciences has the potential to create new knowledge, ideas and processes beneficial to both fields.</p>
