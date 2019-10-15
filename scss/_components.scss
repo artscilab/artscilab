@@ -54,7 +54,11 @@ img {
   margin-bottom: 15px;
 }
 
-.cmnav {
+.home-nav {
+  box-shadow: $box-shadow-dark;
+}
+
+.site-nav {
   width: 100%;
 
   .nav-link {
@@ -113,5 +117,16 @@ img {
   @media (min-width: 768px) {
     text-align: left;
     margin: -100px -50px 0px -50px;
+  }
+}
+
+.section-title {
+  text-align: left;
+  color: $theme-teal;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 50px;
   }
 }

@@ -35,31 +35,33 @@ export default class SiteNav extends React.Component {
 
   render() {
     return (
-        <Navbar light expand="md" className='cmnav'>
-          <Container>
-            <NavbarBrand href="/">ArtSciLab</NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink href="/people">People</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/projects">Projects</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/blog">Blog</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/about">About</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/contact">Contact Us</NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Container>
-        </Navbar>
+      <Navbar light expand="md" className= {`${this.props.className} site-nav`}>
+        <Container>
+          <NavbarBrand href="/">
+            <img src="../../static/asl_logo_red.png" className="img-fluid"></img>
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/people">People</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/projects">Projects</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/blog">Blog</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/about">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/contact">Contact Us</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
     );
   }
 }
