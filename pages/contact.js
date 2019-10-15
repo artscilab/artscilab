@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import { Container, Row, Col } from 'reactstrap';
 
-export default function ContactUs(props) {
+export default function Contact(props) {
   return(
     <Layout pageName="Contact Us" title="Contact Us">
       <Container>

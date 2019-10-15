@@ -54,7 +54,11 @@ img {
   margin-bottom: 15px;
 }
 
-.cmnav {
+.home-nav {
+  box-shadow: $box-shadow-dark;
+}
+
+.site-nav {
   width: 100%;
 
   .nav-link {
@@ -113,5 +117,42 @@ img {
   @media (min-width: 768px) {
     text-align: left;
     margin: -100px -50px 0px -50px;
+  }
+}
+
+.section-title {
+  text-align: left;
+  color: $theme-teal;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 50px;
+  }
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 5px 10px;
+  background: $theme-dark-gray;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: all .2s ease;
+
+  &:hover {
+    background: $theme-red;
+  }
+}
+
+.wp-block-file__button {
+  @extend button;
+
+  &:hover {
+    color: #ffffff;
   }
 }
