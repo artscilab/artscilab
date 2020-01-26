@@ -60,7 +60,7 @@ export default class Index extends Component {
                       <div className="excerpt" dangerouslySetInnerHTML={{__html: excerpt}}></div>
                     }
                     
-                    <DynamicLink actualRoute='post' displayRoute='posts' slug={post.slug} >
+                    <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug} >
                       <button>Read More ></button>
                     </DynamicLink>
                     
