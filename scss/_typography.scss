@@ -6,11 +6,18 @@ p {
 }
 
 a {
-  color: $theme-primary;
+  text-decoration: none;
   transition: all .2s ease;
-  
+
   &:hover {
     text-decoration: none;
+  }
+}
+
+a:not(h2, h3) {
+  color: $theme-primary;
+  
+  &:hover {
     color: $theme-dark-gray
   }
 }

@@ -38,7 +38,7 @@ export default class SiteNav extends React.Component {
       <Navbar light expand="md" className= {`${this.props.className} site-nav`}>
         <Container>
           <NavbarBrand href="/">
-            <img src="../../static/asl_logo_red.png" className="img-fluid"></img>
+            <img src="../../static/asl_logo_black.png" className="nav-logo img-fluid"></img>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
