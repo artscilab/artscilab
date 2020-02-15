@@ -12,10 +12,16 @@
 .layout-footer {
   text-align: center;
 
-  .footer-row {
+  .footer-container {
     padding: 50px 0;
     border-top: 1px solid $theme-light-gray;
 
+    .row {
+      margin-bottom: 50px;
+    }
+  }
+
+  .footer-row {
     p {
       margin-bottom: 0;
     }
@@ -159,5 +165,30 @@ button {
 
   &:hover {
     color: #ffffff;
+  }
+}
+
+.newsletter-signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  #mc_embed_signup, .mc_embed_signup_scroll {
+    width: 80%;
+    max-width: 800px;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  input {
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 800px;
+    padding: 5px 10px; 
+    border: 2px solid $color-text;
   }
 }
