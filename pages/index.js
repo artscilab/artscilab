@@ -22,7 +22,7 @@ export default class Index extends Component {
         <Container fluid>
           <Row className='home-header'>
             <Col className='home-left'>
-              <h3 className="site-title">Connecting Arts and Sciences</h3>
+              <h3 className="site-title">Connecting Arts and Sciences TEST</h3>
               <p className="site-lead">Collaboration between the arts and sciences has the potential to create new knowledge, ideas, and processes beneficial to many disciplines. We work on initiatives that could not be accomplished without the collaboration of artist, designers, and scientists.</p>
             </Col>
           </Row>
