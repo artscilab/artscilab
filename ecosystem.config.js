@@ -3,7 +3,8 @@ module.exports = {
     name: 'artsci',
     script: 'npm',
     args: 'start',
-    instances: 1,
+    instances: "max",
+    exec_mode: "cluster",
     watch: true,
     env: {
       NODE_ENV: 'development'
