@@ -19,7 +19,13 @@ app.prepare()
 
     server.get("/feed", async (req, res) => {
       const r = await fetch("https://dev.atec.io/feed")
-      const x = Buffer.from(await r.text());
+      const raw = await r.text();
+      const replaceOverallUrl = raw.replace(/<link>https:\/\/dev.atec.io<\/link>/, 
+        "<link>artscilab.atec.io</link>")
+      const replaceFeedUrl = replaceOverallUrl.replace(/dev.atec.io\/feed\//, "artscilab.atec.io/feed/")
+      const replaced = replaceFeedUrl.replace(/dev.atec.io\/(?!wp-content\/)/g, 
+        "artscilab.atec.io/blog/")
+      const x = Buffer.from(replaced);
       res.set("content-type", "application/rss+xml")
           .status(200).send(x)
     })

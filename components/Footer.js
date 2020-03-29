@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
       <Container className="footer-container">
         <Row className="footer-row align-items-center">
           <div className="newsletter-signup-container">
-            <h3 for="newsletterEmail">Sign up for the ArtSciLab Newsletter!</h3>
+            <h3 htmlFor="newsletterEmail">Sign up for the ArtSciLab Newsletter!</h3>
             <MailchimpForm></MailchimpForm>
           </div>
         </Row>
