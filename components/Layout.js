@@ -5,8 +5,17 @@ import Footer from './Footer';
 import 'bootstrap/scss/bootstrap.scss';
 import '../scss/main.scss';
 import PropTypes from 'prop-types';
+import {initGA, logPageView} from '../utils/analytics';
 
 export default class Layout extends Component {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  }
+
   render() {
     return (
       <div className='layout'>
