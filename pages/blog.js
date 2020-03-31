@@ -32,19 +32,24 @@ export default class Blog extends Component {
     return (
       <Layout title="Blog" pageName="Blog">
         <Container>
+          <Row className='blog-post justify-content-center mt-5'>
           {this.props.posts.map((post, i) => (
-            <Row className='blog-post justify-content-center mt-5'>
-              <Col sm='8 listing text-center'>
+              <Col key={i} sm='8' className='listing text-center'>
                 <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug}>
-                {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
-                  <img className='img-fluid' src={convertUrlToHttps(post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)}></img>
+                <div className="maxCrop">
+                  {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') 
+                  ? 
+                    <img className='img-fluid' src={convertUrlToHttps(post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)}></img>
+                  : 
+                    <img className='img-fluid' src=""></img>
                   }
-                  <h2>{post.title.rendered}</h2>
+                </div>
+                  <h2 className="listing-title">{post.title.rendered}</h2>
                   <p>{post.date}</p>
                 </DynamicLink>
               </Col>
-            </Row>
           ))}
+          </Row>
         </Container>
       </Layout>
     )
