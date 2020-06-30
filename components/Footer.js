@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
-  Container, 
+  Container,
   Row,
   Col,
   FormGroup
@@ -9,12 +9,17 @@ import MailchimpForm from '../components/MailchimpForm';
 
 export default class Footer extends React.Component {
   render() {
-    return(
+    return (
       <Container className="footer-container">
         <Row className="footer-row align-items-center">
           <div className="newsletter-signup-container">
             <h3 htmlFor="newsletterEmail">Sign up for the ArtSciLab Newsletter!</h3>
             <MailchimpForm></MailchimpForm>
+          </div>
+        </Row>
+        <Row className="footer-row align-items-center">
+          <div className="newsletter-signup-container">
+            <h3><a href="https://mailchi.mp/2d475b5f9645/e-sports-player-development" target="_blank">Subscribe to get the latest about E-Sports Player Development</a></h3>
           </div>
         </Row>
         <Row className='align-items-center'>
