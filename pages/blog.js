@@ -34,7 +34,7 @@ export default class Blog extends Component {
         <Container>
           <Row className='blog-post justify-content-center mt-5'>
           {this.props.posts.map((post, i) => (
-              <Col key={i} sm='8' className='listing text-center'>
+              <Col key={i} xs='12' sm='12' md='12' lg='6' className='listing text-center'>
                 <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug}>
                 <div className="maxCrop">
                   {(post.hasOwnProperty('_embedded')) && (post._embedded.hasOwnProperty('wp:featuredmedia')) && post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') 
