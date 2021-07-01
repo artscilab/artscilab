@@ -26,7 +26,7 @@ export default class Header extends Component {
           <Container>
             <Row className='row-no-margin'>
               <Col>
-                <ReactFittext compressor={0.5} maxFontSize={70}>
+                <ReactFittext compressor={0.5} maxFontSize={40}>
                   <h1 className='page-title display-2'>{this.props.pageName}</h1>
                 </ReactFittext>
               </Col>

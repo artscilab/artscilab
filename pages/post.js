@@ -34,13 +34,13 @@ export default class Post extends React.Component {
       <Layout pageName={this.props.post.title.rendered} title={this.props.post.title.rendered}>
         <Container className='blog-single'>
           <Row className=''>
-            <Col sm='8'>
-              <p>{this.props.post.date}</p>
+            <Col sm='12'>
+              <p>Published On: {this.props.post.date}</p>
             </Col>
           </Row>
           {(this.props.post.hasOwnProperty('_embedded')) && (this.props.post._embedded.hasOwnProperty('wp:featuredmedia')) && this.props.post._embedded['wp:featuredmedia'][0].hasOwnProperty('id') &&
             <Row>
-              <Col sm='8'>
+              <Col sm='12'>
                 <div>
                   <img className='img-fluid featured-image' src={convertUrlToHttps(this.props.post._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)}></img>
                 </div>
@@ -48,7 +48,7 @@ export default class Post extends React.Component {
             </Row>
           }
           <Row className=''>
-            <Col sm='8' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
+            <Col sm='12' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
             </Col>
           </Row>
         </Container>
