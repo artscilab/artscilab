@@ -44,7 +44,7 @@ export default class SiteNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto site-navbar" navbar>
               <NavItem>
-                <NavLink href="/people">People</NavLink>
+                <NavLink href="/people">Lab Members</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/projects">Projects</NavLink>
