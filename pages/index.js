@@ -41,8 +41,8 @@ export default class Index extends Component {
               }
               
               return (
-                <Col key={post.id} md='4' className='listing home-listing'>
-                  <div>
+                <Col key={post.id} xs='12' sm='10' md='6' lg='4' className='listing home-listing'>
+                  <div className="postDiv">
                     {post._embedded &&
                       post._embedded['wp:featuredmedia'] && 
                       post._embedded['wp:featuredmedia'][0] && 
@@ -50,19 +50,23 @@ export default class Index extends Component {
                       post._embedded['wp:featuredmedia'][0].media_details.sizes && 
                       post._embedded['wp:featuredmedia'][0].media_details.sizes.medium && 
                       <div className='crop'>
-                        <img src={convertUrlToHttps(post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url)}></img>
+                        <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug} >
+                          <img src={convertUrlToHttps(post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url)}></img>
+                        </DynamicLink>
                       </div>
                     }
-  
-                    <h3 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h3>
+
+                    <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug} >
+                      <h3 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h3>
+                    </DynamicLink>
                   
                     {post.excerpt &&
                       <div className="excerpt" dangerouslySetInnerHTML={{__html: excerpt}}></div>
                     }
                     
-                    <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug} >
+                    {/* <DynamicLink actualRoute='post' displayRoute='blog' slug={post.slug} >
                       <button>Read More ></button>
-                    </DynamicLink>
+                    </DynamicLink> */}
                     
                     <div className="date">
                       <p>{formatDate(new Date(post.date))}</p>
