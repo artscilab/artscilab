@@ -18,11 +18,11 @@ export default class Projects extends Component {
         <Container>
           <Row className='justify-content-center mb-5'>
           {this.props.projects.map((project, i) => (
-            <Col sm='6' className='listing project-listing text-center'>
+            <Col xs='12' sm='10' md='6' lg='3' className='listing project-listing text-center'>
               <div>
                 <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
                   <img className='img-fluid' src={convertUrlToHttps(project.research_image.guid)}></img>
-                  <h2>{project.title.rendered}</h2>
+                  <h3>{project.title.rendered}</h3>
                 </DynamicLink>
               </div>
             </Col>
