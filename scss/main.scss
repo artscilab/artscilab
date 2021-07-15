@@ -147,7 +147,7 @@
       box-shadow: $box-shadow;        
 
       &::before {
-        content: "Read More";
+        content: "";
         position: absolute;
         font-size: 22px;
       }
