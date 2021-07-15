@@ -42,7 +42,7 @@ export default class SiteNav extends React.Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto site-navbar" navbar>
               <NavItem>
                 <NavLink href="/people">People</NavLink>
               </NavItem>

@@ -27,6 +27,8 @@ export default class Layout extends Component {
           <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png"></link>
           <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png"></link>
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"></link>
         </Head>
         <div className='layout-header'>
           {!this.props.isHome &&

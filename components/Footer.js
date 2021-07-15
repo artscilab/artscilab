@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
             <h3><a href="https://mailchi.mp/2d475b5f9645/e-sports-player-development" target="_blank">Subscribe to get the latest about E-Sports Player Development</a></h3>
           </div>
         </Row>
-        <Row className='align-items-center'>
+        <Row className='align-items-center footer-font'>
           <Col md='6'>
             <img src='/static/logo_square.png'></img>
           </Col>

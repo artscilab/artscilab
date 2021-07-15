@@ -2,7 +2,7 @@ import { FormGroup } from "reactstrap";
 
 const MailchimpForm = () => {
   return (
-    <div id="mc_embed_signup">
+    <div id="mc_embed_signup" className="mailchimpForm">
       <form action="https://utdallas.us3.list-manage.com/subscribe/post?u=53d06e2114d1c4b311405125d&id=5115f02a76" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
         <div id="mc_embed_signup_scroll">
           <input type="email" name="EMAIL" placeholder="Your email" className="required email" id="mce-EMAIL"/>
