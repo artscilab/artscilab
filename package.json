@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "rm package-lock.json && yarn && next build && node server.js"
+    "start": "yarn && next build && node server.js"
   },
   "keywords": [],
   "author": "Al Madireddy <al.madireddy@gmail.com>",
