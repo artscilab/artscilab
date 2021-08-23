@@ -85,7 +85,7 @@
     }
     
     .date {
-      font-family:'Sofia', cursive;
+      // font-family:'Sofia', cursive;
       font-style: normal;
       margin: 0;
       padding: 0;
@@ -194,7 +194,7 @@
   }
 
   .site-title {
-    font-family:'Sofia', cursive;
+    // font-family:'Sofia', cursive;
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 30px;
@@ -229,7 +229,7 @@
 }
 
 .site-navbar{
-  font-family:'Sofia', cursive;
+  // font-family:'Sofia', cursive;
 }
 
 .project-title {
@@ -343,18 +343,18 @@
 
 .single-feature-img {
   @media (min-width: 768px) {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 75px;
-      width: 75px;
-      right: -35px;
-      top: 0;
-      border-radius: $border-radius;
-      background: $theme-red;
-      box-shadow: $box-shadow-red;
-    }
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   height: 75px;
+    //   width: 75px;
+    //   right: -35px;
+    //   top: 0;
+    //   border-radius: $border-radius;
+    //   background: $theme-red;
+    //   box-shadow: $box-shadow-red;
+    // }
   }
 }
 

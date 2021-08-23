@@ -28,43 +28,54 @@ export default class Project extends React.Component {
       <Layout title={this.props.project.title.rendered}>
         <Container className='single-item'>
           <Row className='single-header align-items-end justify-content-center'>
-            <Col md='5' className='single-feature-img'>
+            <Col xs='12' md='5' className='single-feature-img'>
               <img className='img-fluid' src={convertUrlToHttps( this.props.project.research_image.guid)}></img>
             </Col>
-            <Col md='7'>
+            <Col xs='12' md='7'>
               <div className='single-title'>
-                <ReactFitText compressor={0.6} maxFontSize={75}>
-                  <h1 className='display-3'>{this.props.project.title.rendered}</h1>
-                </ReactFitText>
+                {/* <ReactFitText compressor={0.6} maxFontSize={75}> */}
+                  <h2 className='display-3'>{this.props.project.title.rendered}</h2>
+                {/* </ReactFitText> */}
               </div>
             </Col>
           </Row> 
 
-          <Row className='mb-5 single-information justify-content-center'>
-            <Col md='4'>
-              <div className='project-types'>
+          <Row className='mb-1 single-information'>
+            <Col xs='12'>
+              <div>
                 {!!this.props.project.research_type && 
                   <ul className='project-type-list'>
                     {this.props.project.research_type.map((type) => (
                       <li>
-                        <ReactFitText compressor={0.9} maxFontSize={55}>
-                          <h2>{type}</h2>
-                        </ReactFitText>
+                        {/* <ReactFitText compressor={0.9} maxFontSize={55}> */}
+                          <h4 className="display-5">{type}</h4>
+                        {/* </ReactFitText> */}
                       </li>
                     ))}
                   </ul>
                 }
-                {this.props.project.access_link && 
-                <a href={this.props.project.access_link}>{this.props.project.access_link}</a>}
               </div>
             </Col>
-            <Col md='7'>
-              <p className='project-short-description'>{this.props.project.short_description}</p>
+          </Row>
+
+          <Row>
+            <Col xs='12'>
+              <div>
+                  <h5 className='display-5'>{
+                    this.props.project.access_link && 
+                    <a target='blank' href={this.props.project.access_link}>Project Link</a>
+                  }</h5>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className='mb-1 justify-content-center'>
+            <Col xs='12' className='project-short-description text-center'>{this.props.project.short_description}
             </Col>
           </Row>
           
           <Row className='mb-5 justify-content-center'>
-            <Col sm='7' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
+            <Col xs='12' className='post-content' dangerouslySetInnerHTML={this.renderContent()}>
             </Col>
           </Row>
 
@@ -73,14 +84,15 @@ export default class Project extends React.Component {
               <h2>People involved</h2>
             </Col>
           </Row>
-          <Row className='justify-content-center'>
+
+          <Row className='justify-content-center text-center'>
             {this.props.project.lab_members.map((person) => (
-              <Col sm='3' className='mb-5 listing' >
+              <Col sm='6' md='4' lg="4" className='mb-5 listing' >
                 <DynamicLink actualRoute='person' displayRoute='people' slug={person.post_name}>
                   <div className='crop'>
                     <img className='img-fluid' src={convertUrlToHttps(person.profile_image.guid)}></img>
                   </div>
-                  <h2>{person.post_title}</h2>
+                  <h4>{person.post_title}</h4>
                   {person.member_title && <p>{person.member_title}</p> }
                 </DynamicLink>
               </Col>
