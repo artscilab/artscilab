@@ -5,7 +5,7 @@ export default function SectionTitle({text}) {
   return (
     <Row className="section-title">
       <Col>
-        <h2>{text}</h2>
+        <h2 style={{textAlign: "center"}}>{text}</h2>
       </Col>
     </Row>
   )
