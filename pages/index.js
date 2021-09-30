@@ -29,6 +29,14 @@ export default class Index extends Component {
         </Container>
 
         <Container>
+          <Row className='mt-3 justify-content-center border border-dark rounded'>
+            <Col xs='12' className='home-listing justify-content-center'>
+              <h4 className="text-center">Our Art Science Experimental Seminars</h4>
+              <h5 className="text-center">Hosted by Elen Nas</h5>
+              <p className="text-center"> September 30, 2021 - 5 PM CDT</p>
+              <p className="text-center"> ATEC 3.209 or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM4ZGU4MWMtNGQ5Ni00MGNjLThkNGYtY2U3YTQ0NzY3Yzdl%40thread.v2/0?context=%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%222ae11b39-3496-4450-94f6-444ace251d9b%22%7d">MS Teams</a></p>
+            </Col>
+          </Row>
           <SectionTitle text="News and Events"></SectionTitle>
           <Row className='mb-3 justify-content-center'>
             {this.props.posts.map((post) => {
