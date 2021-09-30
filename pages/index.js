@@ -36,8 +36,8 @@ export default class Index extends Component {
               <h5 className="text-center">Dr. Celia Matsunaga</h5>
               <p className="text-center">
                 <ul style={{listStyleType: "none", fontSize: "14px"}}>
-                  <li>Professor at the University of Brasilia, Faculty of Communication. </li>
-                  <li>Post Doctorate at Royal College of Art ( London, UK 2019). </li>
+                  <li>Professor at the University of Brasilia, Faculty of Communication</li>
+                  <li>Post Doctorate at Royal College of Art ( London, UK 2019)</li>
                   {/* <li>Post Doctorate APECV - Association of Teachers of Expression and Visual Communication, Lisbon - Portugal 2019.</li>
                   <li>Ph.D. in Arts from the Institute of the Arts / University of Brasilia</li> */}
                 </ul>
