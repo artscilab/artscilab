@@ -32,7 +32,7 @@ export default class Index extends Component {
           <Row className='mt-3 justify-content-center border border-dark rounded text-center'>
             <Col xs='12' className='home-listing justify-content-center bg-light text-center'>
               <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
-              <h4 className="text-center">Visualization & Typography</h4>
+              <h4 className="text-center">Between Visualization and Interpretation</h4>
               <h5 className="text-center">Dr. Celia Matsunaga</h5>
               <p className="text-center">
                 <ul style={{listStyleType: "none", fontSize: "14px"}}>
