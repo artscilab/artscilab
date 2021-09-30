@@ -29,6 +29,7 @@ export default class Layout extends Component {
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
         </Head>
         <div className='layout-header'>
           {!this.props.isHome &&
