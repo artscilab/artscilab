@@ -29,8 +29,8 @@ export default class Index extends Component {
         </Container>
 
         <Container>
-          <Row className='mt-3 justify-content-center border border-dark rounded'>
-            <Col xs='12' className='home-listing justify-content-center bg-light'>
+          <Row className='mt-3 justify-content-center border border-dark rounded text-center'>
+            <Col xs='12' className='home-listing justify-content-center bg-light text-center'>
               <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
               <h4 className="text-center">Visualization & Typography</h4>
               <h5 className="text-center">Dr. Celia Matsunaga</h5>
