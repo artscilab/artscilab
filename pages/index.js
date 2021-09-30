@@ -30,11 +30,21 @@ export default class Index extends Component {
 
         <Container>
           <Row className='mt-3 justify-content-center border border-dark rounded'>
-            <Col xs='12' className='home-listing justify-content-center'>
-              <h4 className="text-center">Our Art Science Experimental Seminars</h4>
-              <h5 className="text-center">Hosted by Elen Nas</h5>
-              <p className="text-center"> September 30, 2021 - 5 PM CDT</p>
-              <p className="text-center"> ATEC 3.209 or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM4ZGU4MWMtNGQ5Ni00MGNjLThkNGYtY2U3YTQ0NzY3Yzdl%40thread.v2/0?context=%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%222ae11b39-3496-4450-94f6-444ace251d9b%22%7d">MS Teams</a></p>
+            <Col xs='12' className='home-listing justify-content-center bg-light'>
+              <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
+              <h4 className="text-center">Visualization & Typography</h4>
+              <h5 className="text-center">Dr. Celia Matsunaga</h5>
+              <p className="text-center">
+                <ul style={{listStyleType: "none", fontSize: "14px"}}>
+                  <li>Professor at the University of Brasilia, Faculty of Communication. </li>
+                  <li>Post Doctorate at Royal College of Art ( London, UK 2019). </li>
+                  {/* <li>Post Doctorate APECV - Association of Teachers of Expression and Visual Communication, Lisbon - Portugal 2019.</li>
+                  <li>Ph.D. in Arts from the Institute of the Arts / University of Brasilia</li> */}
+                </ul>
+              </p>
+              <p className="text-center" style={{fontSize: "18px"}}>Dicussion about <span className="text-primary">semiotics</span>, <span className="text-success">electronic art</span>, <span className="text-danger">education</span>, <span className="text-warning">typography</span>, <span className="text-info">visualization</span> and much more!</p>
+              <p className="text-center"> September 30, 2021 - 5:30 PM - 7:00 CDT</p>
+              <p className="text-center"> ATC 2.918 or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM4ZGU4MWMtNGQ5Ni00MGNjLThkNGYtY2U3YTQ0NzY3Yzdl%40thread.v2/0?context=%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%222ae11b39-3496-4450-94f6-444ace251d9b%22%7d">MS Teams</a></p>
             </Col>
           </Row>
           <SectionTitle text="News and Events"></SectionTitle>
