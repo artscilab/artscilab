@@ -29,22 +29,25 @@ export default class Index extends Component {
         </Container>
 
         <Container>
-          <Row className='mt-3 justify-content-center border border-dark rounded text-center'>
-            <Col xs='12' className='home-listing justify-content-center bg-light text-center'>
+          <Row className='mt-3 justify-content-center text-center'>
+            <Col xs='12' md='8'  className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
               <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
-              <h4 className="text-center">Between Visualization and Interpretation</h4>
-              <h5 className="text-center">Dr. Celia Matsunaga</h5>
+              <h3 className="text-center text-success">Can Addictions be good for you?</h3>
+              <br/>
+              <p className="text-center"> October 07, 2021 - 5:00 PM CST</p>
+              <p className="text-center"> ATC 2.918 or <a href="https://teams.microsoft.com/l/team/19%3aTKiW5TEV6idTk3snEnmmgxLaTBGU7MvcExQzhxheVI81%40thread.tacv2/conversations?groupId=2a3cc081-bd85-4ab8-bc79-a573fc2a067a&tenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c">MS Teams</a></p>
+              <br/>
+              {/* <h5 className="text-center">Dr. Celia Matsunaga</h5> */}
               <p className="text-center">
-                <ul style={{listStyleType: "none", fontSize: "14px"}}>
-                  <li>Professor at the University of Brasilia, Faculty of Communication</li>
-                  <li>Post Doctorate at Royal College of Art ( London, UK 2019)</li>
-                  {/* <li>Post Doctorate APECV - Association of Teachers of Expression and Visual Communication, Lisbon - Portugal 2019.</li>
-                  <li>Ph.D. in Arts from the Institute of the Arts / University of Brasilia</li> */}
+                <ul style={{listStyleType: "none", fontSize: "15px"}}>
+                  <li><a href="https://utdmercury.com/students-police-learn-use-life-saving-drug/" style={{fontWeight: "bold"}}>The Centre for Students in Recovery Group</a> at UTD will be presenting on types of addictions, methods of recovery and its effect on one’s mental health at the upcoming session.</li>
+                  <hr/>
+                  <li><span style={{fontWeight: "bold"}}>Prof. Roger Malina</span> will present the work of <span style={{fontWeight: "bold"}}>Bonnie Pitman</span> with her project <a href="http://www.dosomethingnew.org/about" style={{fontWeight: "bold"}}>Do Something New</a>. The project explains why some habits are desirable, and how to break an undesirable habit.</li>
+                  <hr/>
+                  <li>We will also be discussing the festivals of <span style={{fontWeight: "bold"}}>Deepavali</span> and <span style={{fontWeight: "bold"}}>Dusshera</span> and ways in which repetitive behaviors can be good.</li>
                 </ul>
               </p>
-              <p className="text-center" style={{fontSize: "18px"}}>Dicussion about <span className="text-primary">semiotics</span>, <span className="text-success">electronic art</span>, <span className="text-danger">education</span>, <span className="text-warning">typography</span>, <span className="text-info">visualization</span> and much more!</p>
-              <p className="text-center"> September 30, 2021 - 5:30 PM - 7:00 CDT</p>
-              <p className="text-center"> ATC 2.918 or <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM4ZGU4MWMtNGQ5Ni00MGNjLThkNGYtY2U3YTQ0NzY3Yzdl%40thread.v2/0?context=%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%222ae11b39-3496-4450-94f6-444ace251d9b%22%7d">MS Teams</a></p>
+              <p className="text-center text-secondary" style={{fontSize: "14px"}}> If you would like to present at our future sessions,<br/> please contact Swati Anwesha, the ArtSciLab Experimental Publisher at <a href="mailto: swati@utdallas.edu">swati@utdallas.edu</a></p>
             </Col>
           </Row>
           <SectionTitle text="News and Events"></SectionTitle>
