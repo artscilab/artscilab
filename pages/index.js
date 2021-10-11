@@ -64,7 +64,7 @@ export default class Index extends Component {
                   We Hope To See You Soon! <br/><br/>  
                 </p>
               </p>
-              <p className="text-center" style={{fontSize: "15px"}}> If you would like to present at our future sessions,<br/> please contact Swati Anwesha, the ArtSciLab Experimental Publisher at <a href="mailto: swati@utdallas.edu">swati@utdallas.edu</a></p>
+              {/* <p className="text-center" style={{fontSize: "15px"}}> If you would like to present at our future sessions,<br/> please contact Swati Anwesha, the ArtSciLab Experimental Publisher at <a href="mailto: swati@utdallas.edu">swati@utdallas.edu</a></p> */}
             </Col>
           </Row>
           <SectionTitle text="News and Events"></SectionTitle>
