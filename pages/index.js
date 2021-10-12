@@ -39,29 +39,29 @@ export default class Index extends Component {
               <p className="text-center"> ATC 2.918 or <a href="https://teams.microsoft.com/l/team/19%3aTKiW5TEV6idTk3snEnmmgxLaTBGU7MvcExQzhxheVI81%40thread.tacv2/conversations?groupId=2a3cc081-bd85-4ab8-bc79-a573fc2a067a&tenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c">MS Teams</a></p>
               <br/>
               {/* style={{backgroundImage: `url('/static/thumbnail_WH.jpg')`}} */}
-              <p>
-                <p className="text-left" style={{padding: "10px"}}>
-                      <span style={{fontWeight: "bold"}}>INFILTRATION</span> is generally a negative concept, but perhaps in the right context, we could bring in some positive connotation.  
+              <p style={{backgroundImage: `url('/static/thumbnail_WH.jpg')`}}>
+                <p className="text-left text-white" style={{padding: "10px"}}>
+                      <span style={{backgroundColor: "green"}}><span style={{fontWeight: "bold"}}>INFILTRATION</span> is generally a negative concept, but perhaps in the right context, we could bring in some positive connotation.  </span>
                       <br/><br/>
 
-                      This is an open call to animals from every discipline or place to join us on campus or on MSTeams at 5pm Thursday, Oct 14, 2021 for a session on infiltration. Any Gamers want to game? Any Animators want to animate? Here’s the space for you!  
+                      <span style={{backgroundColor: "green"}}>This is an open call to animals from every discipline or place to join us on campus or on MSTeams at 5pm Thursday, Oct 14, 2021 for a session on infiltration. Any Gamers want to game? Any Animators want to animate? Here’s the space for you!  </span>
                       <br/><br/>
 
-                      To present at the upcoming Watering Hole, kindly get in touch with the ArtSciLab Experimental Publisher, Swati Anwesha (swati@utdallas.edu).  
+                      <span style={{backgroundColor: "green"}}>To present at the upcoming Watering Hole, kindly get in touch with the ArtSciLab Experimental Publisher, Swati Anwesha (swati@utdallas.edu).  </span>
                       <br/><br/>
 
-                      Prof. Lindsay and Mike Kesden, UTD Physicists, plan on infiltrating our seminar as well with Gaming Applied to Physics. 
+                      <span style={{backgroundColor: "green"}}>Prof. Lindsay and Mike Kesden, UTD Physicists, plan on infiltrating our seminar as well with Gaming Applied to Physics. </span>
                       <br/><br/>
 
-                      <span style={{fontWeight: "bold"}} className="text-center justify-content-center">Definition of infiltrate</span><br/> 
-                      (transitive verb)<br/> 
-                      1. to enter or become established in gradually or unobtrusively usually for subversive purposes the intelligence staff had been infiltrated by spies.<br/>
-                      2. to pass (troops) singly or in small groups through gaps in the enemy line.<br/>
-                      3. to pass into or through (a substance) by filtering or permeating.<br/>
-                      4. to cause (something, such as a liquid) to permeate something by penetrating its pores or interstices.<br/><br/>
+                      <span style={{fontWeight: "bold", backgroundColor: "green"}} className="text-center justify-content-center">Definition of infiltrate</span><br/> 
+                      <span style={{backgroundColor: "green"}}>(transitive verb)</span><br/> <br/>
+                      <span style={{backgroundColor: "green"}}>1. to enter or become established in gradually or unobtrusively usually for subversive purposes the intelligence staff had been infiltrated by spies.</span><br/>
+                      <span style={{backgroundColor: "green"}}>2. to pass (troops) singly or in small groups through gaps in the enemy line.</span><br/>
+                      <span style={{backgroundColor: "green"}}>3. to pass into or through (a substance) by filtering or permeating.</span><br/>
+                      <span style={{backgroundColor: "green"}}>4. to cause (something, such as a liquid) to permeate something by penetrating its pores or interstices.</span><br/><br/>
                 </p>
-                <p className="text-center" style={{fontSize: "20px"}}>
-                  We Hope To See You Soon! <br/><br/>  
+                <p className="text-center text-white" style={{fontSize: "20px"}}>
+                <span style={{backgroundColor: "green"}}>We Hope To See You Soon!</span> <br/><br/>  
                 </p>
               </p>
               {/* <p className="text-center" style={{fontSize: "15px"}}> If you would like to present at our future sessions,<br/> please contact Swati Anwesha, the ArtSciLab Experimental Publisher at <a href="mailto: swati@utdallas.edu">swati@utdallas.edu</a></p> */}
