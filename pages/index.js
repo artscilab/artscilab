@@ -30,7 +30,13 @@ export default class Index extends Component {
 
         <Container>
           <Row className='mt-3 justify-content-center text-center'>
-            <Col xs='12' md='8'  className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
+            <Col xs='12' className='home-listing justify-content-center text-center'>
+              <video autoplay="true" muted="true" width="500" loop="true">
+                <source src="/static/Diwali21.mp4" type="video/mp4"/>
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </Col>
+            <Col xs='12' md='8'  className='d-none home-listing justify-content-center bg-light text-center border border-dark rounded'>
               <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
               <h4 className="text-center text-success">Why Infiltration Can be a Good Thing in and Beyond ATEC?</h4>
               <br/>
