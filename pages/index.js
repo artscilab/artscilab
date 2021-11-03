@@ -28,13 +28,21 @@ export default class Index extends Component {
           </Row>
         </Container>
 
-        <Container>
+        <Container fluid>
           <Row className='mt-3 justify-content-center text-center'>
-            <Col xs='12' className='home-listing justify-content-center text-center'>
-              <video autoplay="true" muted="true" width="500" loop="true">
-                <source src="/static/Diwali21.mp4" type="video/mp4"/>
-                Sorry, your browser doesn't support embedded videos.
-              </video>
+            <Col sm='12' lg='6' className='home-listing justify-content-center text-center'>
+              <object data="/static/Diwali.pdf" type="application/pdf" width="100%" height="550px"> 
+                <p>It appears you don't have a PDF plugin for this browser.
+                No biggie... you can <a href="/static/Diwali.pdf">click here to
+                download the PDF file.</a></p>  
+              </object>
+            </Col>
+            <Col sm='12' lg='6' className='home-listing justify-content-center text-center'>
+              <object data="/static/Rangoli.pdf" type="application/pdf" width="100%" height="550px"> 
+                <p>It appears you don't have a PDF plugin for this browser.
+                No biggie... you can <a href="/static/Rangoli.pdf">click here to
+                download the PDF file.</a></p>  
+              </object>
             </Col>
             <Col xs='12' md='8'  className='d-none home-listing justify-content-center bg-light text-center border border-dark rounded'>
               <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
