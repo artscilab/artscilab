@@ -28,57 +28,10 @@ export default class Index extends Component {
           </Row>
         </Container>
 
-        <Container fluid>
+        <Container>
           <Row className='mt-3 justify-content-center text-center'>
-            <Col sm='12' lg='6' className='home-listing justify-content-center text-center'>
-              <object data="/static/Diwali.pdf" type="application/pdf" width="100%" height="550px"> 
-                <p>It appears you don't have a PDF plugin for this browser.
-                No biggie... you can <a href="/static/Diwali.pdf">click here to
-                download the PDF file.</a></p>  
-              </object>
-            </Col>
-            <Col sm='12' lg='6' className='home-listing justify-content-center text-center'>
-              <object data="/static/Rangoli.pdf" type="application/pdf" width="100%" height="550px"> 
-                <p>It appears you don't have a PDF plugin for this browser.
-                No biggie... you can <a href="/static/Rangoli.pdf">click here to
-                download the PDF file.</a></p>  
-              </object>
-            </Col>
-            <Col xs='12' md='8'  className='d-none home-listing justify-content-center bg-light text-center border border-dark rounded'>
-              <p className="text-center">This week in <b>Our Art Science Experimental Seminars</b></p>
-              <h4 className="text-center text-success">Why Infiltration Can be a Good Thing in and Beyond ATEC?</h4>
-              <br/>
-              <p className="text-center">Coordinated by: Caroline Trotter, ATEC MFA</p>
-              <p className="text-center"> October 14, 2021, 5:00 PM - 6:30 PM CST</p>
-              <p className="text-center"> ATC 2.918 or <a href="https://teams.microsoft.com/l/team/19%3aTKiW5TEV6idTk3snEnmmgxLaTBGU7MvcExQzhxheVI81%40thread.tacv2/conversations?groupId=2a3cc081-bd85-4ab8-bc79-a573fc2a067a&tenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c">MS Teams</a></p>
-              <br/>
-              {/* style={{backgroundImage: `url('/static/thumbnail_WH.jpg')`}} */}
-              <p style={{backgroundImage: `url('/static/thumbnail_WH.jpg')`}}>
-                <p className="text-left text-white" style={{padding: "10px"}}>
-                      <span style={{backgroundColor: "green"}}><span style={{fontWeight: "bold"}}>INFILTRATION</span> is generally a negative concept, but perhaps in the right context, we could bring in some positive connotation.  </span>
-                      <br/><br/>
-
-                      <span style={{backgroundColor: "green"}}>This is an open call to animals from every discipline or place to join us on campus or on MSTeams at 5pm Thursday, Oct 14, 2021 for a session on infiltration. Any Gamers want to game? Any Animators want to animate? Here’s the space for you!  </span>
-                      <br/><br/>
-
-                      <span style={{backgroundColor: "green"}}>To present at the upcoming Watering Hole, kindly get in touch with the ArtSciLab Experimental Publisher, Swati Anwesha (swati@utdallas.edu).  </span>
-                      <br/><br/>
-
-                      <span style={{backgroundColor: "green"}}>Prof. Lindsay and Mike Kesden, UTD Physicists, plan on infiltrating our seminar as well with Gaming Applied to Physics. </span>
-                      <br/><br/>
-
-                      <span style={{fontWeight: "bold", backgroundColor: "green"}} className="text-center justify-content-center">Definition of infiltrate</span><br/> 
-                      <span style={{backgroundColor: "green"}}>(transitive verb)</span><br/> <br/>
-                      <span style={{backgroundColor: "green"}}>1. to enter or become established in gradually or unobtrusively usually for subversive purposes the intelligence staff had been infiltrated by spies.</span><br/>
-                      <span style={{backgroundColor: "green"}}>2. to pass (troops) singly or in small groups through gaps in the enemy line.</span><br/>
-                      <span style={{backgroundColor: "green"}}>3. to pass into or through (a substance) by filtering or permeating.</span><br/>
-                      <span style={{backgroundColor: "green"}}>4. to cause (something, such as a liquid) to permeate something by penetrating its pores or interstices.</span><br/><br/>
-                </p>
-                <p className="text-center text-white" style={{fontSize: "20px"}}>
-                <span style={{backgroundColor: "green"}}>We Hope To See You Soon!</span> <br/><br/>  
-                </p>
-              </p>
-              {/* <p className="text-center" style={{fontSize: "15px"}}> If you would like to present at our future sessions,<br/> please contact Swati Anwesha, the ArtSciLab Experimental Publisher at <a href="mailto: swati@utdallas.edu">swati@utdallas.edu</a></p> */}
+            <Col xs='12' md='12'  className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
+              <img src="/static/WateringHole.jpg" alt="Watering Hole Announcement"/>
             </Col>
           </Row>
           <SectionTitle text="News and Events"></SectionTitle>
