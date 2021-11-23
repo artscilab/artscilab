@@ -54,12 +54,12 @@
 
   > div {
     background: #ffffff;
-    box-shadow: $box-shadow-small;
+    // box-shadow: $box-shadow-small;
     transition: all .2s ease;
     &:hover {
       box-shadow: $box-shadow-small-hover;
     }
-    padding: 15px;
+    padding: 10px;
     height: 100%;
     display: flex;
     flex-direction: column;

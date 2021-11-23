@@ -22,7 +22,7 @@ export default class Projects extends Component {
               <div>
                 <DynamicLink actualRoute='project' displayRoute='projects' slug={project.slug}>
                   <div>
-                  <img className='img-fluid' style={{borderRadius: 5 + 'px'}} src={convertUrlToHttps(project.research_image.guid)}></img>
+                  <img className='img-fluid' style={{borderRadius: 20 + 'px'}} src={convertUrlToHttps(project.research_image.guid)}></img>
                   </div>
                   <h4>{project.title.rendered}</h4>
                 </DynamicLink>

@@ -23,8 +23,8 @@ export default class People extends Component {
                   <div className='crop'>
                     <img className='img-fluid' src={convertUrlToHttps(person.profile_image.guid)}></img>
                   </div>
-                  <h4>{person.title.rendered}</h4>
-                  {person.member_title && <p>{person.member_title}</p> }
+                  <h4 className='text-center'>{person.title.rendered}</h4>
+                  {person.member_title && <p className='text-center'>{person.member_title}</p> }
                 </DynamicLink>
               </Col>
             ))}
