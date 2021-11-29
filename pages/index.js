@@ -29,11 +29,11 @@ export default class Index extends Component {
         </Container>
 
         <Container>
-          {/* <Row className='mt-3 justify-content-center text-center'>
+          <Row className='mt-3 justify-content-center text-center'>
             <Col xs='12' md='12'  className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
               <img src="/static/WateringHole.jpg" alt="Watering Hole Announcement"/>
             </Col>
-          </Row> */}
+          </Row>
           <SectionTitle text="News and Events"></SectionTitle>
           <Row className='mb-3 justify-content-center'>
             {this.props.posts.map((post) => {
