@@ -31,7 +31,7 @@ export default class Index extends Component {
         <Container>
           <Row className='mt-3 justify-content-center text-center'>
             <Col xs='12' md='12'  className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
-              <img src="/static/WateringHole.jpg" alt="Watering Hole Announcement"/>
+              <img src="/static/WateringHole.png" alt="Watering Hole Announcement"/>
             </Col>
           </Row>
           <SectionTitle text="News and Events"></SectionTitle>
