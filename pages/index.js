@@ -43,7 +43,7 @@ export default class Index extends Component {
               md='8'
               className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
               <img
-                src='/static/WateringHole.png'
+                src='/static/WateringHoleNew.png'
                 alt='Watering Hole Announcement'
               />
             </Col>
