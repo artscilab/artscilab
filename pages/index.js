@@ -51,7 +51,7 @@ export default class Index extends Component {
                 </a>
               </button>
               <img
-                src='/static/WateringHoleNew.png'
+                src='/static/WateringHole.png'
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
