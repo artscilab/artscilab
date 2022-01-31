@@ -40,8 +40,18 @@ export default class Index extends Component {
           <Row className='mt-3 justify-content-center text-center'>
             <Col
               xs='12'
-              md='8'
+              md='12'
               className='home-listing justify-content-center bg-light text-center border border-dark rounded'>
+              <img
+                src='/static/crier.png'
+                alt='Watering Hole Announcement'
+                className='my-2 border rounded'
+              />
+            </Col>
+            {/* <Col
+              xs='12'
+              md='8'
+              className='home-listing justify-content-center bg-light text-center border border-dark rounded mt-2'>
               <button className='btn btn-outline-dark p-2 m-2'>
                 <a
                   target='_blank'
@@ -55,7 +65,7 @@ export default class Index extends Component {
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
-            </Col>
+            </Col> */}
           </Row>
           <SectionTitle text='News and Events'></SectionTitle>
           <Row className='mb-3 justify-content-center'>
