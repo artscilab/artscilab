@@ -52,7 +52,7 @@ export default class Index extends Component {
                 </a>
               </button>
               <img
-                src='/static/Watering_Hole_Updated.png'
+                src='/static/Watering_Hole_3Feb.png'
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
@@ -62,7 +62,7 @@ export default class Index extends Component {
               md='12'
               className='home-listing justify-content-center bg-light text-center'>
               <img
-                src='/static/crier.png'
+                src='/static/crier_new.png'
                 alt='Watering Hole Announcement'
                 className='my-2'
               />
