@@ -38,7 +38,7 @@ export default class Index extends Component {
 
         <Container>
           <Row className='mt-3 justify-content-center text-center'>
-          <Col
+            <Col
               xs='12'
               md='8'
               className='home-listing justify-content-center bg-light text-center border border-dark rounded mt-2'>
@@ -57,7 +57,7 @@ export default class Index extends Component {
                 className='my-2 border rounded'
               />
             </Col>
-            <Col
+            {/* <Col
               xs='12'
               md='12'
               className='home-listing justify-content-center bg-light text-center'>
@@ -66,7 +66,7 @@ export default class Index extends Component {
                 alt='Watering Hole Announcement'
                 className='my-2'
               />
-            </Col>
+            </Col> */}
           </Row>
           <SectionTitle text='News and Events'></SectionTitle>
           <Row className='mb-3 justify-content-center'>
