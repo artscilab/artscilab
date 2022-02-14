@@ -42,17 +42,18 @@ export default class Index extends Component {
               xs='12'
               md='8'
               className='home-listing justify-content-center bg-light text-center border border-dark rounded mt-2'>
-              <button className='btn btn-secondary p-2 m-2'>
+              <button className='btn btn-info p-2 m-2'>
                 <a
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-white'
                   href='https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM4ZGU4MWMtNGQ5Ni00MGNjLThkNGYtY2U3YTQ0NzY3Yzdl%40thread.v2/0?context=%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%222ae11b39-3496-4450-94f6-444ace251d9b%22%7d'>
-                  Join Watering Hole
+                  Join Watering Hole <br />
+                  Thursday, February 17th @ 5PM - 6:30PM
                 </a>
               </button>
               <img
-                src='/static/Watering_Hole_10Feb.png'
+                src='/static/WateringHole17Feb.png'
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
