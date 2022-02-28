@@ -36,6 +36,19 @@ export default class Footer extends React.Component {
               urgency and cultural timeliness. <a href='/about'>Read More</a>
             </p>
           </Col>
+          <Col className='pt-2'>
+            <a href='https://www.instagram.com/artscilab_atec/'>
+              <i className='fa fa-instagram fa-3x p-2' aria-hidden='true'></i>
+            </a>
+            <a href='https://twitter.com/artscilab'>
+              <i className='fa fa-twitter fa-3x p-2' aria-hidden='true'></i>
+            </a>
+            <a href='https://www.youtube.com/channel/UCiaZoDQShTXkiSt2r3XeBPg'>
+              <i
+                className='fa fa-youtube-play fa-3x p-2'
+                aria-hidden='true'></i>
+            </a>
+          </Col>
         </Row>
       </Container>
     );
