@@ -43,7 +43,7 @@ export default class Footer extends React.Component {
             <a href='https://twitter.com/artscilab'>
               <i className='fa fa-twitter fa-3x p-2' aria-hidden='true'></i>
             </a>
-            <a href='https://www.youtube.com/channel/UCiaZoDQShTXkiSt2r3XeBPg'>
+            <a href='https://www.youtube.com/channel/UCiaZoDQShTXkiSt2r3XeBPg?sub_confirmation=1'>
               <i
                 className='fa fa-youtube-play fa-3x p-2'
                 aria-hidden='true'></i>
