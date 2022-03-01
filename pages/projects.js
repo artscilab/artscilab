@@ -12,7 +12,6 @@ export default class Projects extends Component {
       'https://dev.atec.io/wp-json/wp/v2/project?per_page=99',
     );
     let projects = await res2.json();
-    console.log(projects);
     return { projects };
   }
 
