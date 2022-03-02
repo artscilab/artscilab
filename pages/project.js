@@ -94,7 +94,7 @@ export default class Project extends React.Component {
 
           <Row className='mb-3 text-center'>
             <Col>
-              <h2>People involved</h2>
+              <h2>People Involved</h2>
             </Col>
           </Row>
 
@@ -105,12 +105,13 @@ export default class Project extends React.Component {
                   actualRoute='person'
                   displayRoute='people'
                   slug={person.post_name}>
-                  <div className='crop'>
+                  <div>
                     <img
                       className='img-fluid'
+                      style={{ maxHeight: '200px', maxWidth: '200px' }}
                       src={convertUrlToHttps(person.profile_image.guid)}></img>
                   </div>
-                  <h4>{person.post_title}</h4>
+                  <h4 className='py-1'>{person.post_title}</h4>
                   {person.member_title && <p>{person.member_title}</p>}
                 </DynamicLink>
               </Col>
