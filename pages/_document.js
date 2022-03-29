@@ -13,7 +13,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <!-- <script
+          <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=G-4VZS72ZLJT`}
           />
@@ -28,16 +28,7 @@ class MyDocument extends Document {
             });
           `,
             }}
-          /> -->
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5R0S7MY2X7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5R0S7MY2X7');
-</script>
+          />
         </Head>
         <body>
           <Main />
