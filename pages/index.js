@@ -49,11 +49,11 @@ export default class Index extends Component {
                   className='text-white'
                   href='https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM4ZGU4MWMtNGQ5Ni00MGNjLThkNGYtY2U3YTQ0NzY3Yzdl%40thread.v2/0?context=%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%222ae11b39-3496-4450-94f6-444ace251d9b%22%7d'>
                   Join Watering Hole <br />
-                  Thursday, March 10th @ 5PM - 6:30PM
+                  Thursday, March 31th @ 5PM - 6:30PM
                 </a>
               </button>
               <img
-                src='/static/WateringHole10March.png'
+                src='/static/WateringHole31March.png'
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
