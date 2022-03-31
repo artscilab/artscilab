@@ -29,7 +29,7 @@ export default function Contact(props) {
             <h3>Email</h3>
             <p>
             Roger Malina — <a href="mailto:rxm116130@utdallas.edu" target="_blank" rel="noopener">rxm116130@utdallas.edu</a><br></br>
-            Cassini Nazir — <a href="mailto:cassini@utdallas.edu" target="_blank" rel="noopener">cassini@utdallas.edu</a>
+            Kirtan Pathak — <a href="mailto:ksp200004@utdallas.edu" target="_blank" rel="noopener">ksp200004@utdallas.edu</a>
             </p>
           </Col>
         </Row>
