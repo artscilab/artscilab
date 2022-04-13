@@ -1,18 +1,17 @@
 import Layout from '../components/Layout';
 import { Container, Row, Col } from 'reactstrap';
 
-export default function Custom404(props) {
+export default function CustomError(props) {
   return (
     <Layout pageName='Contact Us' title='Contact Us'>
       <Container>
         <Row>
-          <h1>404 - Page Not Found</h1>
-          <p>
+          <h5 className='m-5 p-3 border border-warning rounded'>
             {' '}
             atec.io is currently facing outage. The ArtSciLab website will be up
             and running as soon as it if fixed. Meanwhile, you can contact us
             using following contact information.
-          </p>
+          </h5>
         </Row>
         <Row>
           <Col sm='7'>
