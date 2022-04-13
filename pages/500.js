@@ -1,14 +1,14 @@
 import Layout from "../components/Layout";
 import { Container, Row, Col } from 'reactstrap';
 
-export default function Custom404(props) {
+export default function Custom500(props) {
   return(
     <Layout pageName="Contact Us" title="Contact Us">
       <Container>
         <Row>
            <h1>500 - Internal Server Error</h1>
            <p>atec.io is currently facing outage. The ArtSciLab website will be up and running as soon as it if fixed. Meanwhile, you can contact us using following contact information.</p>
-        <Row>
+        </Row>
         <Row>
           <Col sm='7'>
             <p>The ArtSciLab is located at <a href='http://www.utdallas.edu/locator/ATC_3.209'>ATC 3.209</a>, on the 3rd floor of the Edith O’Donnell Arts and Technology Building on The University of Texas at Dallas campus.</p>
