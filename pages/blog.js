@@ -44,7 +44,7 @@ export default class Blog extends Component {
                 excerpt = post.excerpt.rendered;
               }
 
-              return post.categories.indexOf(207) === -1 ? (
+              return post.categories.indexOf(208) !== -1 ? (
                 <Col
                   key={i}
                   xs='12'
