@@ -17,7 +17,7 @@ export default class Post extends React.Component {
   static async getInitialProps({query}) {
     const res = await fetch(`https://dev.atec.io/wp-json/wp/v2/posts?slug=${query.slug}&_embed`)
     let post = await res.json()
-
+    //console.log(post);  //know about the category of post
     let date = new Date(Date.parse(post[0].date));
     let date_display_str = 
       date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear();

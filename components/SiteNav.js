@@ -45,7 +45,7 @@ export default class SiteNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto site-navbar' navbar>
               <NavItem>
-                <NavLink href='/people'>Lab Members</NavLink>
+                <NavLink href='/people'>People</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href='/projects'>Projects</NavLink>
@@ -55,6 +55,12 @@ export default class SiteNav extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href='/newsletters'>Newsletters</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href='/publications'>Publications</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href='/news'>News</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href='/about'>About</NavLink>

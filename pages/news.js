@@ -32,7 +32,7 @@ export default class Blog extends Component {
 
   render() {
     return (
-      <Layout title='Blog' pageName='Blog'>
+      <Layout title='News' pageName='News'>
         <Container>
           
           <Row className='blog-post justify-content-center mt-5'>
@@ -46,7 +46,7 @@ export default class Blog extends Component {
                 excerpt = post.excerpt.rendered;
               }
 
-              return post.categories.indexOf(220) !== -1 ? (
+              return post.categories.indexOf(209) !== -1 ? (
                 <Col
                   key={i}
                   xs='12'
@@ -56,7 +56,7 @@ export default class Blog extends Component {
                   className='listing text-center'>
                   <DynamicLink
                     actualRoute='post'
-                    displayRoute='blog'
+                    displayRoute='news'
                     slug={post.slug}>
                     <div className='maxCrop'>
                       {post.hasOwnProperty('_embedded') &&
