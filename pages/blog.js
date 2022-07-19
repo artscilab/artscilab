@@ -20,7 +20,7 @@ export default class Blog extends Component {
       offset += currentPosts.length;
     }
     posts.map((post) => {
-      //console.log(posts[0]);
+      
       let date = new Date(Date.parse(post.date));
       let date_display_str =
         date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear();
