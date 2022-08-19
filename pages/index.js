@@ -42,7 +42,7 @@ export default class Index extends Component {
               xs='12'
               md='8'
               className='home-listing justify-content-center bg-light text-center border border-dark rounded mt-2'>
-              <button className='btn btn-info p-2 m-2'>
+              {/*<button className='btn btn-info p-2 m-2'>
                 <a
                   target='_blank'
                   rel='noopener noreferrer'
@@ -51,9 +51,9 @@ export default class Index extends Component {
                   Join Watering Hole <br />
                   Thursday, March 10th @ 5PM - 6:30PM
                 </a>
-              </button>
+    </button>*/}
               <img
-                src='/static/WateringHole10March.png'
+                src='/static/openhouse_resized_final_Page_1.jpg'
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
