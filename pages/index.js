@@ -53,7 +53,7 @@ export default class Index extends Component {
                 </a>
     </button>*/}
               <img
-                src='/static/openhouse_resized_final_Page_1.jpg'
+                src='/static/ARTSCILAB.jpg'
                 alt='Watering Hole Announcement'
                 className='my-2 border rounded'
               />
